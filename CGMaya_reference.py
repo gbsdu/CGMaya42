@@ -39,7 +39,6 @@ import ctypes
 import RWingRendererIO
 
 import CGMaya_config
-import CGMaya_function
 import CGMaya_common
 import CGMaya_service
 import CGMaya_parser
@@ -397,8 +396,9 @@ class referenceAssetWindow(QtCGMaya.QDialog):
         self.close()
 
     def referenceAsset(self, task, flag):
-        refProjectDir = makeDir(CGMaya_config.assetStorageDir, self.refProjectName)
-        status, message, sfn = CGMaya_common.downloadFile(self.service, refProjectDir, refProjectDir, task,
+        refProjectDir = CGMaya_common.makeDir(CGMaya_config.assetStorageDir, self.refProjectName)
+        refTaskDir = CGMaya_common.makeDir(refProjectDir, task['name'])
+        status, message, sfn = CGMaya_common.downloadFile(self.service, refProjectDir, refProjectDir, refTaskDir, task,
                                                         task['fileID'])
         if flag:  # reference Model
             CGMaya_config.currentTask['refAssetIDList'].append({'projectName': CGMaya_config.refProjectName, 'name': task['name'],

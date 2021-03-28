@@ -1,7 +1,7 @@
 import logging
 
 
-myRootURL = "http://211.87.224.168:3600"
+myRootURL = "http://211.87.224.166:3600"
 teamName = ''  #RC-Team
 teamInfo = []
 userToken = {}
@@ -20,10 +20,12 @@ isLogin = False
 
 config = None
 ConfigFileName = 'CGMaya.ini'
+teamConfigFileName = 'CGTeam.ini'
+swapConfigFileName = 'CGSwap.ini'
 ConfigFileName_user = ''
 
-IPFSUrl = '192,168.1.2:5002'
-softwareVersion = '3.00'
+IPFSUrl = '192.168.1.2:5002'
+softwareVersion = '4.00'
 
 monthInfo = {}
 
@@ -39,13 +41,10 @@ loggerFilePath = 'CGMayaLogger.log'
 
 
 currentTask = {}
+currentTaskName = ''
+currentTaskID = ''
 currentProject = {}
-
-
-
-
-
-
+currentProjectName = ''
 
 dynamicStorageFlag = True
 workDir = "e:\\temp"
@@ -55,9 +54,6 @@ DLLFile_Darwin = 'CGMaya/libMaya.so'
 pidFileName = 'CGC.pid'
 
 changeReferenceModelList = []
-
-
-
 
 nukePath = 'C:/Program Files/Nuke9.0v1/Nuke9.0.exe'
 nukeScriptPath = 'D:/CGNuke'
@@ -179,3 +175,5 @@ fileEXTNameList = ['.tif', '.jpg', '.bmp', '.png', '.exr', '.iff', '.JPG']
 
 successfulReadMayaFile = True
 currentDlg = None
+
+camParaFileName = 'camPara.ini'

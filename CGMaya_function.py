@@ -112,7 +112,7 @@ def openTask(service, currentTask):
 
     cmds.workspace(dir=projectDir)
     CGMaya_config.assetExtFileName = os.path.basename(taskFileName).split('.').pop()
-    CGMaya_config.logger.info("Maya Open File...\r")
+    CGMaya_config.logger.info("Maya Open File1...\r")
     if not CGMaya_config.successfulReadMayaFile:
         return
     try:

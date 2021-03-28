@@ -39,10 +39,9 @@ import wave
 import ctypes
 #import pytz
 
-import CGMaya_function
-import CGMaya_dialog
 import CGMaya_service
 import CGMaya_logger
+import CGMaya_common
 
 
 renderList = [{'label': u'山大渲染', 'name': 'ShanDa'},
@@ -52,7 +51,7 @@ renderList = [{'label': u'山大渲染', 'name': 'ShanDa'},
                 {'label': u'无锡超算', 'name': 'Wuxi'}]
 
 class submitRenderWindow(QtCGMaya.QDialog):
-    def __init__(self, service, menu, parent = CGMaya_dialog.maya_main_window()):
+    def __init__(self, service, menu, parent = CGMaya_common.maya_main_window()):
         super(submitRenderWindow, self).__init__(parent)
         # And now set up the UI
         self.service = service
@@ -96,7 +95,7 @@ class submitRenderWindow(QtCGMaya.QDialog):
             self.button5 = QtCGMaya.QPushButton(u'Unselect All', self)
         self.projectBox = QtCGMaya.QComboBox(self)
         self.projectBox.currentIndexChanged.connect(self.onProjectSelect)
-        self.renderBox = QtGui.QComboBox(self)
+        self.renderBox = QtCGMaya.QComboBox(self)
         for render in renderList:
             self.renderBox.addItem(render['label'])
         self.renderLocation = renderList[0]
@@ -209,7 +208,7 @@ class submitRenderWindow(QtCGMaya.QDialog):
                 self.projectList.append(task['projectName'])
         for task in self.rawTasks:
             if CGMaya_config.currentProject:
-                if task['projectName'] == CGMaya_config.CGMaya_config.currentProject['name']:
+                if task['projectName'] == CGMaya_config.currentProject['name']:
                     self.taskList.append(task)
             elif task['projectName'] == self.projectList[0]:
                 self.taskList.append(task)
@@ -513,7 +512,7 @@ class submitRenderWindow(QtCGMaya.QDialog):
         self.close()
 
     def onRefresh(self):
-        self.GetRenderTasks()
+        self.getRenderTasks()
 
     def closeEvent(self, event):
         # do stuff

@@ -1,0 +1,8 @@
+global proc CGMaya_Setup(){
+	python "import os, sys, inspect";
+	python "filename = inspect.getframeinfo(inspect.currentframe()).filename";
+    python "path     = os.path.dirname(os.path.abspath(filename))";
+    python "sys.apth.append(oa.path.dirname(path))";
+    python
+}
+CGMaya_Setup;

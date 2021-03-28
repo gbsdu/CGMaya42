@@ -691,7 +691,7 @@ class openTaskWindow(QtCGMaya.QDialog):
             dialog = QtCGMaya.QFileDialog(self, u"Select Download Dir", ".", "*")
         dialog.setFileMode(QtCGMaya.QFileDialog.Directory)
         if dialog.exec_():
-            #textFont = QtCGMaya.QFont("song", 18, QtCGMaya.QFont.Normal)
+            #textFont = QtGui.QFont("song", 18, QtGui.QFont.Normal)
             self.fileList = dialog.selectedFiles()
             attachDir = self.fileList[0]
             for attachID in attachFileIDList:
@@ -1680,7 +1680,7 @@ class saveTaskWindow(QtCGMaya.QDialog):
         dialog.setFileMode(QtCGMaya.QFileDialog.ExistingFiles)
         if dialog.exec_():
             #self.getSubmitsOfTask()
-            #textFont = QtCGMaya.QFont("song", 18, QtCGMaya.QFont.Normal)
+            #textFont = QtGui.QFont("song", 18, QtGui.QFont.Normal)
             self.fileList = dialog.selectedFiles()
             for submitFile in self.fileList:
                 item = QtGui.QListWidgetItem(submitFile)
@@ -3785,7 +3785,7 @@ class transferWindow(QtCGMaya.QDialog):
         dialog = QtCGMaya.QFileDialog(self, "选择传送的文件", ".", "*")
         dialog.setFileMode(QtCGMaya.QFileDialog.ExistingFiles)
         if dialog.exec_():
-            # textFont = QtCGMaya.QFont("song", 18, QtCGMaya.QFont.Normal)
+            # textFont = QtGui.QFont("song", 18, QtGui.QFont.Normal)
             fileList = dialog.selectedFiles()
             self.srcFile = fileList[0]
 

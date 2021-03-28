@@ -28,6 +28,7 @@ class loginWindow(QtCGMaya.QDialog):
         #cmds.nameCommand('RCMayaLogin', annotation='RCMaya Login', command='python("onLogin()")')
         #cmds.hotkey(k='Return', name='RCMayaLogin')
 
+        # 获取当前站点的所有团队信息
         result, message = service.getAllTeams()
         CGMaya_config.logger.set("login")
         if not result:
@@ -119,10 +120,10 @@ class loginWindow(QtCGMaya.QDialog):
         if len(message) > 0:
             CGMaya_config.logger.error('login Error: : %s(%s, %s, %s)\r' % (message, teamName,
                                                             self.nameText.text(), self.passText.text()))
-            QtCGMaya.QMessageBox.information(CGMaya_common.maya_main_window(),
-                                             u"错误信息", message, QtCGMaya.QMessageBox.Yes)
+            QtCGMaya.QMessageBox.information(self, u"错误信息", message, QtCGMaya.QMessageBox.Yes)
             #self.errorFlag = True
             #self.errorText.setText(message)
+            self.setWindowFlags(self.windowFlags() | QtCore.Qt.WindowStaysOnTopHint)
             return
         CGMaya_config.teamName = teamName
         CGMaya_config.userName = self.nameText.text()

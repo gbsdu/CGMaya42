@@ -6,6 +6,14 @@ CGMaya
 
 部署方式：
 
+    直接方式：
+
+1）下载installMaya.mel
+
+2）启动maya,把installMaya.mel拖进maya
+
+3）再次启动maya
+
     复制方式：
 
 1）git clone https://github.com/gbsdu/CGMaya.git

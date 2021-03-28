@@ -15,15 +15,27 @@ setup(
 )
 """
 setup(ext_modules = cythonize('CGMaya_main.py'))
-setup(ext_modules = cythonize('CGMaya_dialog.py'))
-setup(ext_modules = cythonize('CGMaya_function.py'))
+# setup(ext_modules = cythonize('CGMaya_dialog.py'))
+# setup(ext_modules = cythonize('CGMaya_function.py'))
 setup(ext_modules = cythonize('CGMaya_export.py'))
+setup(ext_modules = cythonize('CGMaya_login.py'))
+setup(ext_modules = cythonize('CGMaya_open.py'))
+setup(ext_modules = cythonize('CGMaya_common.py'))
+
+
+setup(ext_modules = cythonize('CGMaya_save.py'))
+setup(ext_modules = cythonize('CGMaya_reference.py'))
+setup(ext_modules = cythonize('CGMaya_setup.py'))
+
 setup(ext_modules = cythonize('CGMaya_parser.py'))
 setup(ext_modules = cythonize('CGMaya_submit.py'))
-#setup(ext_modules = cythonize('CGMaya_config.py'))
+setup(ext_modules = cythonize('CGMaya_config.py'))
 setup(ext_modules = cythonize('CGMaya_service.py'))
 setup(ext_modules = cythonize('CGMaya_logger.py'))
 setup(ext_modules = cythonize('CGMaya_mouse.py'))
-#setup(ext_modules = cythonize('CGMaya_timer.py'))
+setup(ext_modules = cythonize('CGMaya_aniCapture.py'))
+setup(ext_modules = cythonize('CGMaya_assetCapture.py'))
+setup(ext_modules = cythonize('CGMaya_checkin.py'))
+
 setup(ext_modules = cythonize('RWingForMaya.py'))
 setup(ext_modules = cythonize('RWingRendererIO.py'))

@@ -68,10 +68,10 @@ class CGService():
             return json.loads(result)
         except urllib2.HTTPError, e:
             print('url =', url, e)
-            return '0'
+            return {'status': 2, 'message': e}
         except urllib2.URLError, e:
             print('url =', url, e)
-            return '1'
+            return {'status': 3, 'message': e}
 
     def send(self, url, params={}):
         headers = {'Authorization': 'JWT ' + CGMaya_config.userToken['teamToken']}
@@ -83,24 +83,26 @@ class CGService():
             result_data.close()
             return json.loads(result)
         except urllib2.HTTPError, e:
-            print('url =', url, e)
+            print('url1 =', url, e)
             return '0'
         except urllib2.URLError, e:
-            print('url =', url, e)
+            print('url2 =', url, e)
             return '1'
 
     def testConnection(self):
+        # print('testConnection')
         status, result = self.getAllTeams()
         if not status:
-            return result
+            return False, result
         else:
-            return ''
+            return True, ''
 
     def getAllTeams(self):
         if self.teamList:
             return True, self.teamList
         result = self.send_server('/cgserver/getAllTeams', {}, False)
-        if result['status'] == 1:
+        # print('result =', result)
+        if result['status'] > 0:
             return False, result['message']
         else:
             self.teamList = result['team']
@@ -114,6 +116,7 @@ class CGService():
             result_data = urllib2.urlopen(req)
             result = json.loads(result_data.read())
             result_data.close()
+            # print('result =', result)
             if result['status'] != 0:
                 return result['message']
             CGMaya_config.userToken = result
@@ -123,8 +126,10 @@ class CGService():
             CGMaya_config.userAlias = result['user']['alias']
             return ''
         except urllib2.HTTPError, e:
+            print('e1 =', e)
             return e
         except urllib2.URLError, e:
+            print('e2 =', e)
             return e
 
     def getTeamInfo(self, teamName):
@@ -377,7 +382,8 @@ class CGService():
         return self.send(self.myDAMURL + '/cgteam/judgeOpen', {'id': id})
 
     def assetClose(self, id):
-        return self.send(self.myDAMURL + '/cgteam/assetClose', {'id': id})
+        # return self.send(self.myDAMURL + '/cgteam/assetClose', {'id': id})
+        return None
 
 
 
@@ -391,6 +397,7 @@ class CGService():
 
     def putFileGridFS(self, uploadFile, bType = True):
         if bType:
+            print(CGMaya_config.teamInfo['mongoFileDBName'])
             db = self.DBOpen(CGMaya_config.teamInfo['mongoFileDBName'])
         else:
             db = self.DBOpen(CGMaya_config.teamInfo['mongoDBName'])
@@ -615,13 +622,18 @@ class CGService():
     def myWFSetTaskSingleOutputID(self, task_id, fileID):
         return self.send(self.myDAMURL + '/cgteam/setTaskSingleOutputID', {'id': task_id, 'fileID': fileID})
 
-
-
     def transferShot(self, srcProjectName, srcShotName, destProjectName, destShotName):
         return self.send(self.myDAMURL + '/cgteam/transferShot', {'srcProjectName': srcProjectName, 'srcShotName': srcShotName,
                                                                   'destProjectName': destProjectName, 'destShotName': destShotName})
-
-
     def getSubmitsOfTask(self, id):
         return self.send(self.myDAMURL + '/cgteam/getSubmitsOfTask', {'id': id})
 
+
+
+
+    def createSubmit2(self, taskID, submitFileID, name, length, width, height, type):
+        return self.send('/cgteam/createSubmit2', {'taskID': taskID, 'submitFileID': submitFileID,
+                            'name': name, 'length': length, 'width': width, 'height': height, 'type': type})
+
+    def submitTask2(self, task_id, submitID):
+        return self.send('/cgteam/submitTask2', {'id': task_id, 'submitID': submitID})

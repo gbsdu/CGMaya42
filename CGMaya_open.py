@@ -1,4 +1,4 @@
- #coding=utf-8
+#coding=utf-8
 
 import os
 import platform
@@ -35,7 +35,6 @@ import wave
 import ctypes
 #import pytz
 
-import CGMaya_function
 import CGMaya_common
 import CGMaya_service
 import CGMaya_parser
@@ -116,11 +115,13 @@ class openTaskWindow(QtCGMaya.QDialog):
         if not CGMaya_config.storageDir or not CGMaya_config.assetStorageDir or \
                 not os.path.exists(CGMaya_config.storageDir) or not os.path.exists(CGMaya_config.assetStorageDir):
             QtCGMaya.QMessageBox.information(parent, u"错误信息", u"设置的存储路径不合适, 请设置合适的存储路径",
-                                             QtCGMaya.QMessageBox.Yes)
+                                          QtGui.QMessageBox.Yes)
             self.close()
             return
         # cmds.nameCommand('RCMayaOpen', annotation='RCMaya Open', command='python("onOpen()")')
         # cmds.hotkey(k='Return', name='RCMayaOpen')
+
+        # 裁剪版设置
         CGMaya_config.clipboard = QtCGMaya.QApplication.clipboard()
         self.taskFileID = ''
         self.taskTextureFileID = ''
@@ -262,13 +263,17 @@ class openTaskWindow(QtCGMaya.QDialog):
         return cmp(str1, str2)
 
     def getProjects(self):
+        cmds.waitCursor(state=True)
+        # 获得当前用户的所有任务列表
         self.rawTasks = self.service.getMyTask(CGMaya_config.userName)
+        # 获得所有项目列表
         self.rawProjectList = self.service.getAllProjects()
         self.parentProjectList = []
         self.allTaskList = []
         self.projectList = []
         self.parentProjectBox.clear()
 
+        # 所有任务所属的主项目列表，
         for rawTask in self.rawTasks:
             for rawProject in self.rawProjectList:
                 if rawTask['projectName'] == rawProject['name']:
@@ -289,6 +294,7 @@ class openTaskWindow(QtCGMaya.QDialog):
             self.parentProjectName = self.parentProjectList[0]
             self.parentProjectBox.setCurrentIndex(0)
         self.onParentProjectSelect(0)
+        cmds.waitCursor(state=False)
 
     def onParentProjectSelect(self, index):
         self.taskFileID = ''
@@ -380,13 +386,13 @@ class openTaskWindow(QtCGMaya.QDialog):
     def onCurrentChanged(self, index):
         if index == 0:
             self.onSetVersion()
+            self.tabIndex = index
         elif index == 1:
             self.onSetReference()
+            self.tabIndex = index
         elif index == 2:
             self.onSetLight()
-        else:
-            pass
-        pass
+            self.tabIndex = index
 
     def onDownloadAttach(self):
         if self.taskIndex < 0:
@@ -402,7 +408,7 @@ class openTaskWindow(QtCGMaya.QDialog):
             dialog = QtCGMaya.QFileDialog(self, u"Select Download Dir", ".", "*")
         dialog.setFileMode(QtCGMaya.QFileDialog.Directory)
         if dialog.exec_():
-            # textFont = QtCGMaya.QFont("song", 18, QtCGMaya.QFont.Normal)
+            # textFont = QtGui.QFont("song", 18, QtGui.QFont.Normal)
             self.fileList = dialog.selectedFiles()
             attachDir = self.fileList[0]
             for attachID in attachFileIDList:
@@ -445,7 +451,7 @@ class openTaskWindow(QtCGMaya.QDialog):
             except KeyError:
                 assetPath = ''
             item = QtCGMaya.QTreeWidgetItem(self.refTreeWidget,
-                                            [refAsset['projectName'] + '  ', refAsset['name'] + '  ', assetPath])
+                    [refAsset['projectName'] + '  ', refAsset['name'] + '  ', assetPath])
             item.setFont(0, textFont)
             item.setFont(1, textFont)
             item.setFont(2, textFont)
@@ -457,6 +463,7 @@ class openTaskWindow(QtCGMaya.QDialog):
         self.verTreeWidget.clear()
         headerList = []
         headerList.append(u'日期')
+        headerList.append(u'说明')
         headerList.append(u'fileID')
         headerList.append(u'textureFileID')
         self.verTreeWidget.setHeaderLabels(headerList)
@@ -467,13 +474,16 @@ class openTaskWindow(QtCGMaya.QDialog):
         except KeyError:
             fileVersionList = []
         for arr in fileVersionList:
-            item = QtCGMaya.QTreeWidgetItem(self.verTreeWidget, [self.dateStr(arr['createDate']), '   ' + arr['fileID'], '  ' + arr['textureFileID']])
+            item = QtCGMaya.QTreeWidgetItem(self.verTreeWidget, [self.dateStr(arr['createDate']), '  ' + arr['note'],
+                                    '   ' + arr['fileID'], '  ' + arr['textureFileID']])
             item.setFont(0, textFont)
             item.setFont(1, textFont)
             item.setFont(2, textFont)
+            item.setFont(3, textFont)
             self.verTreeWidget.resizeColumnToContents(0)
             self.verTreeWidget.resizeColumnToContents(1)
-            self.verTreeWidget.resizeColumnToContents(1)
+            self.verTreeWidget.resizeColumnToContents(2)
+            self.verTreeWidget.resizeColumnToContents(3)
 
     def onSetLight(self):
         if self.currentTask['stage'] != '灯光':
@@ -553,13 +563,6 @@ class openTaskWindow(QtCGMaya.QDialog):
         self.currentTask = self.tasks[row]
         self.taskFileID = self.currentTask['fileID']
         self.taskTextureFileID = self.currentTask['textureFileID']
-        # try:
-        #     timeUnit = project['timeUnit']
-        # except KeyError or ValueError:
-        #     timeUnit = 'pal:25fps'
-        # if not timeUnit:
-        #     time = timeUnit.split(':')[0]
-        #     cmds.currentUnit(time=time)
 
         if project['templateName'] == '3DAsset':
             self.tabWidget.setTabEnabled(0, True)
@@ -568,16 +571,19 @@ class openTaskWindow(QtCGMaya.QDialog):
             self.tabWidget.setTabEnabled(3, False)
             if self.tabIndex > 0:
                 self.tabIndex = 0
+            self.tabWidget.setCurrentIndex(0)
             self.onCurrentChanged(0)
         elif project['templateName'] == '3DShot':
             self.tabWidget.setTabEnabled(0, True)
             self.tabWidget.setTabEnabled(1, True)
             self.tabWidget.setTabEnabled(2, False)
             self.tabWidget.setTabEnabled(3, False)
-            if self.tasks[row]['stage'] == '灯光':
+            if self.currentTask['stage'] == '灯光':
                 self.tabWidget.setTabEnabled(2, True)
+                self.tabWidget.setCurrentIndex(2)
                 self.onCurrentChanged(2)
             else:
+                self.tabWidget.setCurrentIndex(self.tabIndex)
                 self.onCurrentChanged(self.tabIndex)
 
         if column < 2 or not self.currentTask['fileID'] or item.text(2) != '':
@@ -649,17 +655,6 @@ class openTaskWindow(QtCGMaya.QDialog):
     def onDoubleClickItem1(self, item, column):
         if self.tabIndex == 0:
             row = self.verTreeWidget.indexOfTopLevelItem(item)
-            # if CGMaya_config.lang == 'zh':
-            #     response = QtCGMaya.QMessageBox.question(CGMaya_common.maya_main_window(), u"警告", u"是否删除这个版本?",
-            #                             QtCGMaya.QMessageBox.StandardButton.No | QtCGMaya.QMessageBox.StandardButton.Yes)
-            # else:
-            #     response = QtCGMaya.QMessageBox.question(CGMaya_common.maya_main_window(), u"Warning", u"Is Delete File?",
-            #                             QtCGMaya.QMessageBox.StandardButton.No | QtCGMaya.QMessageBox.StandardButton.Yes)
-            # reply = QtCGMaya.QMessageBox.Yes
-            # if not response == reply:
-            #     return
-            # self.service.deleteMayaFile(self.assetData[row]['id'])
-            # self.onSetVersion()
             fileVersionList = self.currentTask['fileVersionList']
             # self.taskFileID = CGMaya_service.objectIDToUnicode(self.assetData[row]['id'])
             self.taskFileID = fileVersionList[row]['fileID']
@@ -694,10 +689,6 @@ class openTaskWindow(QtCGMaya.QDialog):
         self.getProjects()
 
     def onOpen(self):
-        # item = self.taskTreeWidget.currentItem()
-        # currentRow = self.taskTreeWidget.indexOfTopLevelItem(item)
-        # currentTask = copy.deepcopy(self.tasks[currentRow])
-        # CGMaya_config.currentTask = currentTask
         CGMaya_config.currentTask = self.currentTask
         CGMaya_config.currentProject = self.service.getProjectInfo(self.currentTask['projectName'])
 
@@ -728,20 +719,25 @@ class openTaskWindow(QtCGMaya.QDialog):
             CGMaya_config.logger.server(self.currentTask['projectName'], self.currentTask['name'], self.currentTask['_id'],
                                         CGMaya_config.CGMaya_Action_New)
             CGMaya_config.textureReadFlag = True
+            self.CGMenu.menu.setEnable(True)
+            if CGMaya_config.currentProject['templateName'] == '3DShot':
+                self.CGMenu.menuOpen(False)
+            else:
+                self.CGMenu.menuOpen(True)
             self.close()
             return
 
         if self.currentTask['stage'] == u'灯光':
-            #CGMaya_config.lightRefFlag = self.openRefRadiobutton.isChecked()
             CGMaya_config.lightRefFlag = True
             status, message =self.openLightTask(self.currentTask, self.taskFileID)
         elif self.currentTask['stage'] == u'布局' or self.currentTask['stage'] == u'动画':
             status, message = self.openAniTask(self.currentTask, self.taskFileID)
         else:
             status, message = self.openAssetTask(self.currentTask, self.taskFileID, self.taskTextureFileID)
-
         if not status:
-            QtCGMaya.QMessageBox.warning(self.parent, u"错误", message, QtCGMaya.QMessageBox.Yes)
+            # QtCGMaya.QMessageBox.information(self, u"错误", message, QtCGMaya.QMessageBox.Yes)
+            # self.CGMenu.menu.setEnable(True)
+            # self.close()
             return
         # stage = currentTask['stage']
         # if stage == u'动画' or stage == u'布局' or stage == u'灯光':
@@ -754,7 +750,6 @@ class openTaskWindow(QtCGMaya.QDialog):
         #     # mel.eval("setCurrentFrameVisibility(!`optionVar -q currentFrameVisibility`)")
         #     # mel.eval("setCameraNamesVisibility(!`optionVar -q cameraNamesVisibility`)")
         #     # mel.eval("setFocalLengthVisibility(!`optionVar -q focalLengthVisibility`)")
-
         CGMaya_config.logger.server(self.currentTask['projectName'], self.currentTask['name'], self.currentTask['_id'],
                                         CGMaya_config.CGMaya_Action_Open)
         CGMaya_config.logger.info('Open Task---Finish-----------------\r')
@@ -766,82 +761,59 @@ class openTaskWindow(QtCGMaya.QDialog):
         self.close()
         self.mousePoint = CGMaya_mouse.mousePoint()
 
-    def createReferenceTask(self, currentTask):
-        CGMaya_config.logger.info("Processing Create Referenrce Task...\r")
-        # try:
-        #     refModel = currentTask['refModel']
-        # except KeyError:
-        #     refModel = ''
-        # if not refModel:
-        #     CGMaya_config.logger.error("File is Null\r")
-        #     return
-        # refObj = json.loads(refModel)
-        # refProjectName = refObj['modelProjectName']
-        #
-        # self.service.myWFSetTaskAssetRefModel(currentTask['_id'], refProjectName)
-        # refProjectDir = CGMaya_config.assetStorageDir + '/' + refProjectName
-        # if not os.path.exists(refProjectDir):
-        #     os.mkdir(refProjectDir)
-        # refList = refObj['refModelList'].split(',')
-        # for refModel in refList:
-        #     if not refModel:
-        #         continue
-        #     taskList = self.service.myWFsearchTask(refModel, refProjectName)
-        #     refTask = taskList[0]
-        #     if refTask:
-        #         sfn = self.openAsset(service, refTask['fileID'], refTask, CGMaya_config.assetStorageDir)
-        #         fn = os.path.basename(sfn)
-        #         CGMaya_config.refAssetIDList.append({'projectName': refTask['projectName'],
-        #                                              'name': fn, 'id': refTask['fileID'], 'taskID': refTask['_id']})
-        #         # cmds.file(sfn, reference=True, options='v=0', ignoreVersion=True, namespace=':')
-        #         CGMaya_config.logger.debug("Reference Asset = %s\r" % currentTask['name'])
-        #         cmds.file(sfn, reference=True, options='v=0', ignoreVersion=True, namespace=currentTask['name'])
-        return
 
+    #  打开资产任务
     def openAssetTask(self, currentTask, taskFileID, taskTextureFileID):
-        CGMaya_config.logger.info('Open Asset Task, %s(%s)\r' % (currentTask['name'], currentTask['stage']))
+        CGMaya_config.logger.info('Open Asset Task, %s(%s)\r' % (currentTask['name'], currentTask['stage'].encode('utf-8')))
 
         if not taskFileID:
             return True, 'taskFileID is None'
+
         projectDir = CGMaya_common.makeDir(CGMaya_config.assetStorageDir, currentTask['projectName'])
-        status, message, taskFileName = CGMaya_common.downloadFile(self.service, projectDir, projectDir, currentTask, taskFileID, taskTextureFileID)
+        taskDir = CGMaya_common.makeDir(projectDir, currentTask['name'])
+        status, message, taskFileName = CGMaya_common.downloadFile(self.service, projectDir, projectDir, taskDir,
+                                                    currentTask, taskFileID, taskTextureFileID)
         if status:
+            self.hide()
             cmds.workspace(dir=projectDir)
             CGMaya_config.assetExtFileName = os.path.basename(taskFileName).split('.').pop()
-            CGMaya_config.logger.info("Maya Open File...\r")
+            CGMaya_config.logger.info("Maya Open File2...\r")
             try:
                 cmds.file(taskFileName, open=True, force=True)
-            except RuntimeError:
+            except RuntimeError, e:
                 CGMaya_config.logger.error("RuntimeError-----%s\r" % taskFileName)
-                return False, 'RuntimeError-----'
+                CGMaya_config.logger.error("e-----%s\r" % e)
             return True, ''
         else:
-            print('message =', message)
             return False, message
 
+    #  打开布局、动画任务
     def openAniTask(self, currentTask, taskFileID):
         CGMaya_config.logger.info('Open Animation Task, %s(%s)\r' % (currentTask['name'], currentTask['stage']))
 
-        ###print 'Processing Create Referenrce Task
         if not taskFileID:
-            self.createReferenceTask(currentTask)
             return True, 'taskFileID is None'
 
         refProjectDir = CGMaya_common.makeDir(CGMaya_config.assetStorageDir, CGMaya_config.currentProject['refProject'])
+        # 获得引用资产列表
         refTaskList = self.service.getAniTaskInfoFromRefAssetIDList(currentTask['refAssetIDList'])
         for refTask in refTaskList:
             if not refTask:
                 continue
-            status, message, _ = CGMaya_common.downloadFile(self.service, refProjectDir, refProjectDir, refTask, refTask['fileID'])
+            refTaskDir = CGMaya_common.makeDir(refProjectDir, refTask['name'])
+            # 下载引用资产并处理
+            status, message, _ = CGMaya_common.downloadFile(self.service, refProjectDir, refProjectDir, refTaskDir, refTask, refTask['fileID'], refTask['textureFileID'])
             if not status:
                 return False, message
 
         projectDir = CGMaya_common.makeDir(CGMaya_config.storageDir, currentTask['projectName'])
-        status, message, taskFileName = CGMaya_common.downloadFile(self.service, projectDir, refProjectDir, currentTask, taskFileID)
+        taskDir = CGMaya_common.makeDir(projectDir, currentTask['name'])
+        # 下载动画模型文件
+        status, message, taskFileName = CGMaya_common.downloadFile(self.service, projectDir, refProjectDir, taskDir, currentTask, taskFileID)
         if not status:
             return False, message
 
-        #Processing Audio ...
+        # 下载音频文件
         CGMaya_config.logger.info("Processing Audio...\r")
         try:
             audioFileIDList = currentTask['audioFileIDList']
@@ -855,37 +827,52 @@ class openTaskWindow(QtCGMaya.QDialog):
         cmds.workspace(dir=projectDir)
         CGMaya_config.assetExtFileName = os.path.basename(taskFileName).split('.').pop()
         CGMaya_config.logger.info("Maya Open File...\r")
+        self.hide()
         try:
             cmds.file(taskFileName, open=True, force=True)
-        except RuntimeError:
+        except RuntimeError, e:
             CGMaya_config.logger.error("RuntimeError-----%s\r" % taskFileName)
-            return False, 'RuntimeError-----'
+            # return False, 'RuntimeError-----'
+            CGMaya_config.logger.error("e-----%s\r" % e)
         return True, ''
 
     def openLightTask(self, currentTask, taskFileID):
         CGMaya_config.logger.info('Open Light Task, %s(%s)\r' % (currentTask['name'], currentTask['stage']))
 
+        if not taskFileID:
+            return True, 'taskFileID is None'
+
         refProjectDir = CGMaya_common.makeDir(CGMaya_config.assetStorageDir, CGMaya_config.currentProject['refProject'])
+        # 获得引用资产列表
         refTaskList = self.service.getLightTaskInfoFromRefAssetIDList(currentTask['refAssetIDList'])
         for refTask in refTaskList:
             if not refTask:
                 continue
-            status, message, _ = CGMaya_common.downloadFile(self.service, refProjectDir, refProjectDir, refTask, refTask['fileID'])
+            refTaskDir = CGMaya_common.makeDir(refProjectDir, refTask['name'])
+            # 下载引用资产并处理
+            status, message, _ = CGMaya_common.downloadFile(self.service, refProjectDir, refProjectDir, refTaskDir,
+                                            refTask, refTask['fileID'], refTask['textureFileID'])
             if not status:
                 return False, message
 
+        # 下载动画模型文件
         projectDir = CGMaya_common.makeDir(CGMaya_config.storageDir, currentTask['projectName'])
-        status, message, aniFileName = CGMaya_common.downloadFile(self.service, projectDir, refProjectDir, currentTask, currentTask['fileID'])
+        taskDir = CGMaya_common.makeDir(projectDir, currentTask['name'])
+        status, message, aniFileName = CGMaya_common.downloadFile(self.service, projectDir, refProjectDir, taskDir, currentTask, currentTask['fileID'])
         if not status:
             return False, message
 
         taskDir = CGMaya_common.makeDir(projectDir, currentTask['name'])
         if self.lightFileFlag:
+            #  下载灯光文件
             lightDir = CGMaya_common.makeDir(taskDir, CGMaya_config.CGMaya_Light_Dir)
-            status, message, lightFileName = CGMaya_common.downloadFile(self.service, projectDir, refProjectDir, currentTask, taskFileID, lightDir)
+            status, message, lightFileName = CGMaya_common.downloadFile(self.service, projectDir, refProjectDir,
+                                                            lightDir, currentTask, taskFileID)
             CGMaya_config.logger.info("     Open File-----%s\r" % lightFileName)
+            self.hide()
             cmds.file(lightFileName, open=True, force=True)
         else:
+            self.hide()
             if CGMaya_config.lightRefFlag:
                 CGMaya_config.logger.info("     Open Reference File-----%s\r" % aniFileName)
                 cmds.file(aniFileName, reference=True, options='v=0', ignoreVersion=True,
@@ -894,113 +881,8 @@ class openTaskWindow(QtCGMaya.QDialog):
                 CGMaya_config.logger.info("     Open File-----%s\r" % aniFileName)
                 cmds.file(aniFileName, open=True, force=True)
         renderer = CGMaya_config.currentProject['render']
-        # if CGMaya_config.project['render'] == 'redshift':
-        #    convertTextureFile(CGMaya_config.assetStorageDir)
+
         cmds.setAttr('defaultRenderGlobals.currentRenderer', renderer, type='string')
         CGMaya_config.singleOutputPath = taskDir
         pymel.core.mel.setProject(CGMaya_config.singleOutputPath)
         return True, ''
-
-    def convertTextureFile2(self, textureDir):
-        if platform.system() == "Linux" or platform.system() == "Darwin":
-            return
-        userScriptDir = cmds.internalVar(userScriptDir=True)
-        exeFile = userScriptDir.replace('/', '\\') + 'CGMaya\\redshiftTextureProcessor.exe'
-        for fn in os.listdir(textureDir):
-            path = textureDir + fn
-            ext = path.split('.').pop()
-            if ext == 'rstexbin' or ext == 'rs':
-                continue
-            command = exeFile + ' ' + path
-            subprocess.Popen(command, shell=True)
-        # for refAssetID in CGMaya_config.currentTask['refAssetIDList']:
-        #     for fn in os.listdir(textureDir):
-        #         path = textureDir + fn
-        #         ext = path.split('.').pop()
-        #         if ext == 'rstexbin' or ext == 'rs':
-        #             continue
-        #         command = exeFile + ' ' + path
-        #         subprocess.Popen(command, shell=True)
-
-    def downloadFile2(self, projectDir, refProjectDir, task, fileID, dir=''):
-        if dir:
-            taskDir = dir
-        else:
-            taskDir = CGMaya_common.makeDir(projectDir, task['name'])
-        fn = self.service.getFileName(task, fileID)
-        filePath = os.path.join(taskDir, fn)
-        tmpDir = CGMaya_common.makeDir(projectDir, CGMaya_config.CGMaya_Tmp_Dir)
-        downLoadFilePath = os.path.join(tmpDir, 'tmp.' + fn.split('.').pop())
-        logPath = CGMaya_common.makeDir(projectDir, CGMaya_config.CGMaya_Log_Dir)
-        lockFilePath = os.path.join(logPath, task['name'] + CGMaya_config.lockFileExt)
-        if os.path.exists(lockFilePath):
-            str = u'文件正在被其他用户下载。。。，请等待--' + task['name']
-            QtCGMaya.QMessageBox.information(CGMaya_config.currentDlg, u"提示信息", str, QtCGMaya.QMessageBox.Yes)
-            return False, str, ''
-
-        with open(lockFilePath, 'w') as lockFP:
-            lockFP.write('jjj')
-        logFilePath = os.path.join(logPath, task['name'] + CGMaya_config.logFileExt)
-        fileLog = CGMaya_common.fileLog(logFilePath)
-        taskDir = CGMaya_common.makeDir(projectDir, task['name'])
-        tmpDir = CGMaya_common.makeDir(projectDir, CGMaya_config.CGMaya_Tmp_Dir)
-        fileName = os.path.basename(filePath)
-        bExist = fileLog.getData(fileName, fileID)
-        if not os.path.exists(filePath) or bExist != 2:
-            CGMaya_config.logger.info("Downloading File begin----%s\r" % filePath)
-            begin = time.time()
-            self.service.getFile(task, downLoadFilePath, fileID, fileName)
-            #CGMaya_config.textureReadFlag = False
-            if task['textureFileID'] and CGMaya_config.textureReadFlag and not task['stage'] in taskStageList:
-                textureDir = CGMaya_common.makeDir(taskDir, CGMaya_config.CGMaya_Texture_Dir)
-                textureFileName = self.service.getFileInfo(task['textureFileID']).filename
-                texturePath = os.path.join(tmpDir, textureFileName)
-                CGMaya_config.logger.info("Downloading texture File-----%s\r" % texturePath)
-                self.service.getFile(task, texturePath, task['textureFileID'], textureFileName)
-                zf = zipfile.ZipFile(texturePath, 'r', zipfile.ZIP_DEFLATED, allowZip64=True)
-                fileList = zf.namelist()
-                for names in fileList:
-                    try:
-                        zf.extract(names, path=textureDir)
-                    except Exception as e:
-                        print 'File Read is failed----', names
-                zf.close()
-                project = self.service.getProjectInfo(task['projectName'])
-                if project['render'] == 'redshift':
-                    self.convertTextureFile(textureDir)
-                for file1 in fileList:
-                    if file1.split('.').pop() == 'rs':  # redshift Proxy
-                        file = os.path.join(textureDir, file1)
-                        bakFile = file.split('.')[0] + '.bak'
-                        CGMaya_config.logger.info("     Processing Proxy File-----%s\r" % file)
-                        if os.path.exists(file):
-                            parser = CGMaya_parser.processRedshiftProxyFile(file, bakFile)
-                            parser.replaceFilePath()
-                            shutil.copy(bakFile, file)
-                            os.remove(bakFile)
-                        else:
-                            CGMaya_config.logger.info('Proxy File is not existed---%s\r' % file)
-                os.remove(texturePath)
-            if bExist == 0:
-                fileLog.setData(fileName, fileID)
-            end = time.time()
-            str = '{0:.2f}'.format(end - begin) + 's'
-            CGMaya_config.logger.info("Downloading File end----%s\r" % str)
-            self.processMaya(task['name'], downLoadFilePath, filePath, projectDir, refProjectDir)
-            os.remove(downLoadFilePath)
-        fileLog.close()
-        # try:
-        #     textureAttachIDList = task['textureAttachIDList']
-        #     for textureAttachID in textureAttachIDList:
-        #
-        # except KeyError:
-        #     pass
-        if os.path.exists(lockFilePath):
-            os.remove(lockFilePath)
-        return True, '', filePath
-
-    def processMaya2(self, assetName, fileName_in, fileName_out, projectDir, refProjectDir):
-        CGMaya_config.logger.info('processMaya---%s %s\r' % (fileName_in, fileName_out))
-        parser = CGMaya_parser.mayaParser(fileName_in)
-        refList, textureList = parser.replaceFilePath(assetName, fileName_out, projectDir, refProjectDir)
-        return refList, textureList

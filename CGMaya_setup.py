@@ -41,18 +41,14 @@ import CGMaya_common
 import CGMaya_service
 import CGMaya_logger
 import CGMaya_main
-import CGMaya_mouse
 
-class setupWindow(QtCGMaya.QDialog):
-    def __init__(self, service, parent=CGMaya_common.maya_main_window()):
-        super(setupWindow, self).__init__(parent)
-        self.service = service
-        CGMaya_config.logger.set("setup")
-        self.setup_ui()
-
-    def setup_ui(self):
+class urlPngDialog(QtCGMaya.QDialog):
+    def __init__(self, parent, qr):
+        super(urlPngDialog, self).__init__(parent)
+        self.parent = parent
+        self.qr = qr
         self.main_layout = QtCGMaya.QVBoxLayout()
-        """
+
         self.row_Hbox = QtCGMaya.QGroupBox()
         self.layout = QtCGMaya.QGridLayout()
         self.myRootURLLabel = QtCGMaya.QLabel(u'入口：', self)
@@ -65,19 +61,76 @@ class setupWindow(QtCGMaya.QDialog):
         self.layout.addWidget(self.myIPFSURLText, 1, 1)
         self.row_Hbox.setLayout(self.layout)
         self.main_layout.addWidget(self.row_Hbox)
-        """
         self.row_Hbox = QtCGMaya.QGroupBox()
         self.layout = QtCGMaya.QGridLayout()
+
+        if CGMaya_config.lang == 'zh':
+            self.button = QtCGMaya.QPushButton(u'关闭', self)
+        else:
+            self.button = QtCGMaya.QPushButton(u'Close', self)
+
+        self.layout.addWidget(self.button)
+        self.row_Hbox.setLayout(self.layout)
+        self.main_layout.addWidget(self.row_Hbox)
+        self.button.clicked.connect(self.onClose)
+
+        self.setLayout(self.main_layout)
+        self.setGeometry(0, 0, 500, 200)
+        self.show()
+        self.movePosition()
+
+    def movePosition(self):
+        self.move(self.qr)
+
+    def keyPressEvent(self, event):
+        if (event.modifiers() & QtCore.Qt.ShiftModifier):
+            self.parent.urlDlg = None
+            self.close()
+
+    def onClose(self):
+        CGMaya_config.myRootURL = self.myRootURLText.text()
+        CGMaya_config.IPFSUrl = self.myIPFSURLText.text()
+        print(CGMaya_config.myRootURL)
+        print(CGMaya_config.IPFSUrl)
+        self.parent.urlDlg = None
+        self.close()
+
+class setupWindow(QtCGMaya.QDialog):
+    def __init__(self, service, parent=CGMaya_common.maya_main_window()):
+        super(setupWindow, self).__init__(parent)
+        self.service = service
+        self.urlDlg = None
+        CGMaya_config.logger.set("setup")
+        self.setup_ui()
+
+    def setup_ui(self):
+        self.main_layout = QtCGMaya.QVBoxLayout()
+
+        # self.row_Hbox1 = QtCGMaya.QGroupBox()
+        # self.layout1 = QtCGMaya.QGridLayout()
+        # self.myRootURLLabel = QtCGMaya.QLabel(u'入口：', self)
+        # self.myRootURLText = QtCGMaya.QLineEdit(CGMaya_config.myRootURL, self)
+        # self.myIPFSURLLabel = QtCGMaya.QLabel(u'IPFS入口：', self)
+        # self.myIPFSURLText = QtCGMaya.QLineEdit(CGMaya_config.IPFSUrl, self)
+        # self.layout1.addWidget(self.myRootURLLabel, 0, 0)
+        # self.layout1.addWidget(self.myRootURLText, 0, 1)
+        # self.layout1.addWidget(self.myIPFSURLLabel, 1, 0)
+        # self.layout1.addWidget(self.myIPFSURLText, 1, 1)
+        # self.row_Hbox1.setLayout(self.layout1)
+        # self.main_layout.addWidget(self.row_Hbox1)
+
+        self.row_Hbox2 = QtCGMaya.QGroupBox()
+        self.layout2 = QtCGMaya.QGridLayout()
         self.assetStorageLabel = QtCGMaya.QLabel(u'资产缓冲区路径：', self)
         self.assetStorageText = QtCGMaya.QLineEdit(CGMaya_config.assetStorageDir, self)
         self.storageLabel = QtCGMaya.QLabel(u'项目缓冲区路径：', self)
         self.storageText = QtCGMaya.QLineEdit(CGMaya_config.storageDir, self)
-        self.layout.addWidget(self.assetStorageLabel, 0, 0, 1, 1)
-        self.layout.addWidget(self.assetStorageText, 0, 1, 1, 4)
-        self.layout.addWidget(self.storageLabel, 1, 0, 1, 1)
-        self.layout.addWidget(self.storageText, 1, 1, 1, 4)
-        self.row_Hbox.setLayout(self.layout)
-        self.main_layout.addWidget(self.row_Hbox)
+        self.layout2.addWidget(self.assetStorageLabel, 0, 0, 1, 1)
+        self.layout2.addWidget(self.assetStorageText, 0, 1, 1, 4)
+        self.layout2.addWidget(self.storageLabel, 1, 0, 1, 1)
+        self.layout2.addWidget(self.storageText, 1, 1, 1, 4)
+        self.row_Hbox2.setLayout(self.layout2)
+        self.main_layout.addWidget(self.row_Hbox2)
 
         self.row_Hbox = QtCGMaya.QGroupBox()
         self.layout = QtCGMaya.QGridLayout()
@@ -128,11 +181,20 @@ class setupWindow(QtCGMaya.QDialog):
         self.setWindowFlags(QtCore.Qt.Dialog | QtCore.Qt.WindowStaysOnTopHint)
         self.center()
 
+    def keyPressEvent(self, event):
+        if (event.modifiers() & QtCore.Qt.ShiftModifier):
+            if not self.urlDlg:
+                self.urlDlg = urlPngDialog(self, self.qr.bottomLeft())
+                self.urlDlg.show()
+            else:
+                self.urlDlg.close()
+                self.urlDlg = None
+
     def center(self):
-        qr = self.frameGeometry()
+        self.qr = self.frameGeometry()
         cp = QtCGMaya.QDesktopWidget().availableGeometry().center()
-        qr.moveCenter(cp)
-        self.move(qr.topLeft())
+        self.qr.moveCenter(cp)
+        self.move(self.qr.topLeft())
 
     def editUserSetup(self, fileName, softVer):
         ffn = fileName.split('.')[0] + '.bak'
@@ -221,6 +283,9 @@ class setupWindow(QtCGMaya.QDialog):
 
         self.service.userActionLog(CGMaya_config.userName, '', '', '', CGMaya_config.CGMaya_Action_Setup)
         CGMaya_config.logger.server(CGMaya_config.userName, '', '', CGMaya_config.CGMaya_Action_Setup)
+        # print(CGMaya_config.assetStorageDir)
+        # print(CGMaya_config.storageDir)
+        CGMaya_common.writeConfigFile_user()
         self.close()
 
     def onCancel(self):

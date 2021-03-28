@@ -9,7 +9,10 @@
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CGMaya4.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_aniCapture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_assetCapture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_checkin.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/CGMaya_common.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/CGMaya_config.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/CGMaya_dialog.py" afterDir="false" />
@@ -333,108 +336,6 @@
       <change afterPath="$PROJECT_DIR$/Cython/Utils.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Cython/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/EDIT.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ImgUtil.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ArgImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/BdfFontFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/BmpImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/BufrStubImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ContainerIO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/CurImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/DcxImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/EpsImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ExifTags.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/FitsStubImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/FliImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/FontFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/FpxImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/GbrImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/GdImageFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/GifImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/GimpGradientFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/GimpPaletteFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/GribStubImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/Hdf5StubImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/IcnsImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/IcoImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/Image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageChops.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageCms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageColor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageDraw.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageDraw2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageEnhance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageFileIO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageFilter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageFont.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageGL.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageGrab.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageMath.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageMode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageOps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImagePalette.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImagePath.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageQt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageSequence.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageShow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageStat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageTk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageTransform.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageWin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImtImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/IptcImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/JpegImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/McIdasImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/MicImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/MpegImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/MspImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/OleFileIO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PSDraw.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PaletteFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PalmImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PcdImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PcfFontFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PcxImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PdfImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PixarImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PngImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PpmImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PsdImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/SgiImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/SpiderImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/SunImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/TarIO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/TgaImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/TiffImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/TiffTags.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/WalImageFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/WmfImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/XVThumbImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/XbmImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/XpmImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/_imaging.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/_imagingmath.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/pilconvert.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/pildriver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/pilfile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/pilfont.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/pilprint.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/Qt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ViewportCapture.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ViewportCaptureCameraSetting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ViewportCaptureCameraSettingItem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ViewportCaptureGeneral.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ViewportCaptureSetting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/icon/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/instruction/readme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/json/setting.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ui/ViewportCapture.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ui/cam_setting.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ui/item.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ui/setting.ui" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MySQLdb/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MySQLdb/connections.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MySQLdb/constants/CLIENT.py" afterDir="false" />
@@ -471,108 +372,6 @@
       <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/helper_stingray.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/helper_vray.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/ImgUtil.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ArgImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/BdfFontFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/BmpImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/BufrStubImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ContainerIO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/CurImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/DcxImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/EpsImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ExifTags.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/FitsStubImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/FliImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/FontFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/FpxImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/GbrImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/GdImageFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/GifImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/GimpGradientFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/GimpPaletteFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/GribStubImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/Hdf5StubImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/IcnsImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/IcoImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/Image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageChops.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageCms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageColor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageDraw.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageDraw2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageEnhance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageFileIO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageFilter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageFont.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageGL.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageGrab.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageMath.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageMode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageOps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImagePalette.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImagePath.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageQt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageSequence.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageShow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageStat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageTk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageTransform.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageWin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImtImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/IptcImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/JpegImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/McIdasImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/MicImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/MpegImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/MspImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/OleFileIO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PSDraw.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PaletteFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PalmImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PcdImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PcfFontFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PcxImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PdfImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PixarImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PngImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PpmImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PsdImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/SgiImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/SpiderImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/SunImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/TarIO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/TgaImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/TiffImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/TiffTags.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/WalImageFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/WmfImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/XVThumbImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/XbmImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/XpmImagePlugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/_imaging.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/_imagingmath.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/pilconvert.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/pildriver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/pilfile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/pilfont.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/pilprint.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/Qt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/ViewportCapture.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/ViewportCaptureCameraSetting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/ViewportCaptureCameraSettingItem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/ViewportCaptureGeneral.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/ViewportCaptureSetting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/icon/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/instruction/readme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/json/setting.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/ui/ViewportCapture.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/ui/cam_setting.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/ui/item.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewportCapture/ui/setting.ui" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_mysql.pyd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_mysql_exceptions.py" afterDir="false" />
@@ -934,6 +733,9 @@
       <change afterPath="$PROJECT_DIR$/ipfsapi/multipart.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ipfsapi/utils.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ipfsapi/version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makeMelRunner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melTemplate.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/merge.bat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/process.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pyaudio.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pymongo/__init__.py" afterDir="false" />
@@ -1006,8 +808,10 @@
       <change afterPath="$PROJECT_DIR$/requests/utils.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/setup.mel" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup_bak.mel" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/six.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/start.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startMac.sh" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/streaminghttp.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/testStorageSize.py" afterDir="false" />
@@ -1236,35 +1040,56 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/CGMaya4$CGMaya_main.coverage" NAME="CGMaya_main Coverage Results" MODIFIED="1607321261037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-740519460">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
-          <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="4" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.closed" value="54" />
+          <entry key="project.open.time.0" value="16" />
+          <entry key="project.open.time.1" value="14" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.2" value="5" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.4" value="3" />
+          <entry key="project.open.time.5" value="12" />
+          <entry key="project.open.time.6" value="10" />
+          <entry key="project.open.time.7" value="5" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="16" />
+          <entry key="bat" value="5" />
+          <entry key="c" value="1" />
+          <entry key="mel" value="4" />
+          <entry key="py" value="100" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="16" />
+          <entry key="C++" value="1" />
+          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="Python" value="100" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="17" />
+          <entry key="bat" value="168" />
+          <entry key="dummy" value="4" />
+          <entry key="mel" value="171" />
+          <entry key="py" value="10160" />
+          <entry key="txt" value="79" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="17" />
+          <entry key="PLAIN_TEXT" value="422" />
+          <entry key="Python" value="10160" />
         </counts>
       </usages-collector>
     </session>
@@ -1272,75 +1097,106 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CGMaya_export.py">
+        <entry file="file://$PROJECT_DIR$/CGMaya_open.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="5904">
+              <caret line="291" column="25" selection-start-line="288" selection-start-column="12" selection-end-line="291" selection-end-column="25" />
+              <folding>
+                <element signature="e#880#2482#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CGMaya_logger.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/CGMaya_saveDlg.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19512">
+              <caret line="814" column="13" selection-start-line="814" selection-start-column="13" selection-end-line="814" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CGMaya_login.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CGMaya_mouse.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CGMaya_parser.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CGMaya_open.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="59" column="70" lean-forward="true" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="70" />
+            <state relative-caret-position="4176">
+              <caret line="174" column="47" selection-start-line="174" selection-start-column="36" selection-end-line="174" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CGMaya_submit.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="25" selection-start-line="25" selection-end-line="27" selection-end-column="13" />
+              <folding>
+                <element signature="e#8451#10108#0" />
+                <element signature="e#10973#13220#0" />
+                <element signature="e#13277#14284#0" />
+                <element signature="e#14330#14856#0" />
+                <element signature="e#14893#15378#0" />
+                <element signature="e#15417#15906#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CGMaya_service.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2232">
+              <caret line="104" column="27" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
+              <folding>
+                <element signature="e#15#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CGMaya_submit.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="226" column="7" selection-start-line="226" selection-start-column="7" selection-end-line="226" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CGMaya_common.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1488">
-              <caret line="71" lean-forward="true" selection-start-line="47" selection-end-line="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CGMaya_save.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
-              <caret line="69" column="60" lean-forward="true" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CGMaya_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+            <state relative-caret-position="744">
+              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+              <folding>
+                <element signature="e#15#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/timer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RWingForMaya.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RWingRendererIO.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -1356,11 +1212,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getRe</find>
-      <find>QMessageBox</find>
-      <find>pngDialog</find>
+      <find>Open Asset Task</find>
+      <find>print</find>
+      <find>enum</find>
+      <find>s</find>
+      <find>createSubmit</find>
+      <find>create</find>
+      <find>json</find>
+      <find>JSON</find>
+      <find>active_cam</find>
+      <find>submitTask</find>
       <find>wait</find>
-      <find>QFont</find>
+      <find>readSwapConfigFile</find>
+      <find>err =</find>
+      <find>CGMaya_config.currentTask</find>
+      <find>self.currentTask</find>
+      <find>CGMaya_config.currentProject</find>
+      <find>ext =</find>
+      <find>loadCheckBox</find>
+      <find>readConfigFile</find>
+      <find>Maya Open File...</find>
+      <find>projectDir-----</find>
+      <find>openAssetTask</find>
+      <find>platform</find>
+      <find>GetRenderTasks</find>
+      <find>renderJobSubmit</find>
+      <find>getTeamInfo</find>
+      <find>getAllTeams</find>
+      <find>testConnection</find>
+      <find>layer</find>
+      <find>getRenderLayers</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1369,11 +1250,37 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CGMaya_main.py" />
-        <option value="$PROJECT_DIR$/CGMaya_service.py" />
+        <option value="$PROJECT_DIR$/setup.mel" />
+        <option value="$PROJECT_DIR$/setup_bak.mel" />
+        <option value="$PROJECT_DIR$/install.py" />
+        <option value="$PROJECT_DIR$/makeMelRunner.py" />
+        <option value="$PROJECT_DIR$/installMaya.mel" />
+        <option value="$PROJECT_DIR$/melTemplate.txt" />
+        <option value="$PROJECT_DIR$/installMaya.py" />
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/startMac.sh" />
+        <option value="$PROJECT_DIR$/README.txt" />
+        <option value="$PROJECT_DIR$/userSetup.mel" />
+        <option value="$PROJECT_DIR$/start.bat" />
+        <option value="$PROJECT_DIR$/CGMaya_reference.py" />
+        <option value="$PROJECT_DIR$/CGMaya_setup.py" />
+        <option value="$PROJECT_DIR$/MayaViewportCapture/ViewportCaptureSetting.py" />
+        <option value="$PROJECT_DIR$/ViewportCapture/ViewportCaptureCameraSetting.py" />
+        <option value="$PROJECT_DIR$/CGMaya_config.py" />
+        <option value="$PROJECT_DIR$/CGMaya_login.py" />
+        <option value="$PROJECT_DIR$/CGMaya_save.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/CGMaya_assetCapture.py" />
+        <option value="$PROJECT_DIR$/CGMaya_aniCapture.py" />
+        <option value="$PROJECT_DIR$/CGMaya_checkin.py" />
         <option value="$PROJECT_DIR$/CGMaya_export.py" />
-        <option value="$PROJECT_DIR$/CGMaya_open.py" />
         <option value="$PROJECT_DIR$/CGMaya_common.py" />
+        <option value="$PROJECT_DIR$/merge.bat" />
+        <option value="$PROJECT_DIR$/CGMaya_function.py" />
+        <option value="$PROJECT_DIR$/CGMaya_open.py" />
+        <option value="$PROJECT_DIR$/CGMaya_main.py" />
+        <option value="$PROJECT_DIR$/CGMaya_submit.py" />
+        <option value="$PROJECT_DIR$/CGMaya_service.py" />
       </list>
     </option>
   </component>
@@ -1383,10 +1290,22 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MCSettingsProvider">
+    <option name="Port" value="4439" />
+    <option name="Host" value="localhost" />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="423" />
-    <option name="width" value="2778" />
-    <option name="height" value="2112" />
+    <option name="x" value="613" />
+    <option name="y" value="28" />
+    <option name="width" value="1803" />
+    <option name="height" value="1356" />
   </component>
   <component name="ProjectId" id="1YkEkIy4s4TMAMDisPmRP4pXlpr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -1403,6 +1322,11 @@
               <item name="CGMaya4" type="b2602c69:ProjectViewProjectNode" />
               <item name="CGMaya4" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CGMaya4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CGMaya4" type="462c0819:PsiDirectoryNode" />
+              <item name="Scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -1417,8 +1341,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CGNukeRoto2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="mayacharm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="D:\CGTeam\CGMaya4" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1431,6 +1361,40 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="Python.CGMaya_main">
+    <configuration name="CGMaya4" type="MAYACHARM_RUN_CONFIGURATION" factoryName="MayaCharm Configuration Factory">
+      <option name="ScriptFilePath" value="D:\CGTeam\CGMaya4\CGMaya_main.py" />
+      <option name="ScriptCodeText" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CGMaya_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CGMaya4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CGMaya_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.CGMaya_main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.CGMaya_main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -1454,29 +1418,30 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="282" y="0" width="1852" height="1408" extended-state="0" />
+    <frame x="82" y="13" width="1624" height="1286" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22742476" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22988506" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.13186814" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3296328" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29888985" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3296328" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Maya Log" order="10" />
+      <window_info anchor="bottom" id="Maya Log" order="10" weight="0.19470538" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.32941177" />
-      <window_info anchor="bottom" id="Python Console" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.015371477" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.22032452" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.2097044" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.20960699" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -1512,81 +1477,329 @@
           <line>162</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CGMaya_common.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CGMaya_save.py</url>
+          <line>439</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CGMaya_login.py</url>
+          <line>162</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CGMaya_reference.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CGMaya_service.py">
+    <entry file="file://$PROJECT_DIR$/install.py" />
+    <entry file="file://$PROJECT_DIR$/setup_bak.mel">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="329" column="17" selection-start-line="329" selection-start-column="12" selection-end-line="329" selection-end-column="17" />
+        <state relative-caret-position="600">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CGMaya_dialog.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CGMaya_config.py">
+    <entry file="file://$PROJECT_DIR$/setup.mel">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="29" selection-start-line="21" selection-end-line="21" selection-end-column="29" />
+        <state relative-caret-position="168">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/makeMelRunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/installMaya.mel">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/melTemplate.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/installMaya.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startMac.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userSetup.mel">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_reference.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9648">
+          <caret line="403" column="32" selection-start-line="403" selection-start-column="32" selection-end-line="403" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7608">
+          <caret line="615" column="30" selection-end-line="944" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bak/CGMaya_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3336">
+          <caret line="139" column="18" selection-start-line="139" selection-start-column="18" selection-end-line="139" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ViewportCapture/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/MayaViewportCapture/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/MayaViewportCapture/ViewportCaptureSetting.py" />
+    <entry file="file://$PROJECT_DIR$/MayaViewportCapture/ViewportCapture.py" />
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ViewportCapture/ViewportCaptureSetting.py" />
+    <entry file="file://$PROJECT_DIR$/ViewportCapture/ViewportCaptureCameraSettingItem.py" />
+    <entry file="file://$PROJECT_DIR$/ViewportCapture/ImgUtil.py" />
+    <entry file="file://$PROJECT_DIR$/ViewportCapture/ViewportCapture.py" />
+    <entry file="file://$PROJECT_DIR$/ViewportCapture/ViewportCaptureCameraSetting.py" />
+    <entry file="file://$PROJECT_DIR$/start.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="63" selection-start-column="63" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_aniCapture.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6024">
+          <caret line="253" selection-start-line="253" selection-end-line="253" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_assetCapture.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6216">
+          <caret line="260" column="24" selection-start-line="260" selection-start-column="19" selection-end-line="260" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CGMaya_export.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="1464">
+          <caret line="190" column="7" selection-start-line="190" selection-start-column="7" selection-end-line="190" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CGMaya_logger.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CGMaya_login.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CGMaya_mouse.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CGMaya_parser.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CGMaya_common.py">
+    <entry file="file://$PROJECT_DIR$/README.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1488">
-          <caret line="71" lean-forward="true" selection-start-line="47" selection-end-line="71" />
+        <state relative-caret-position="336">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CGMaya_save.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="69" column="60" lean-forward="true" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="60" />
+        <state relative-caret-position="2232">
+          <caret line="94" column="57" selection-start-line="94" selection-start-column="57" selection-end-line="94" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CGMaya_main.py">
+    <entry file="file://$PROJECT_DIR$/CGMaya_setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        <state relative-caret-position="2304">
+          <caret line="98" column="73" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/total.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_dialog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45024">
+          <caret line="1878" column="40" selection-start-line="1878" selection-start-column="40" selection-end-line="1878" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="48" />
+          <caret line="17" column="52" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="52" />
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="54" />
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="50" />
+          <caret line="20" column="49" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="49" />
+          <caret line="21" column="48" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="48" />
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="50" />
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <caret line="25" column="48" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="48" />
+          <caret line="26" column="53" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="53" />
+          <caret line="27" column="49" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="49" />
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="50" />
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="50" />
+          <caret line="31" column="50" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="50" />
+          <caret line="32" column="51" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="51" />
+          <caret line="33" column="50" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="50" />
+          <caret line="34" column="49" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="49" />
+          <caret line="35" column="54" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="54" />
+          <caret line="36" column="54" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="54" />
+          <caret line="37" column="51" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="51" />
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <caret line="39" column="49" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="49" />
+          <caret line="40" column="52" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_checkin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1128">
+          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+          <folding>
+            <element signature="e#15#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="114" column="46" selection-start-line="114" selection-start-column="46" selection-end-line="114" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CGMaya_open.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="59" column="70" lean-forward="true" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="70" />
+        <state relative-caret-position="5904">
+          <caret line="291" column="25" selection-start-line="288" selection-start-column="12" selection-end-line="291" selection-end-column="25" />
+          <folding>
+            <element signature="e#880#2482#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_saveDlg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19512">
+          <caret line="814" column="13" selection-start-line="814" selection-start-column="13" selection-end-line="814" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4176">
+          <caret line="174" column="47" selection-start-line="174" selection-start-column="36" selection-end-line="174" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CGMaya_submit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="226" column="7" selection-start-line="226" selection-start-column="7" selection-end-line="226" selection-end-column="7" />
+        <state relative-caret-position="528">
+          <caret line="25" selection-start-line="25" selection-end-line="27" selection-end-column="13" />
+          <folding>
+            <element signature="e#8451#10108#0" />
+            <element signature="e#10973#13220#0" />
+            <element signature="e#13277#14284#0" />
+            <element signature="e#14330#14856#0" />
+            <element signature="e#14893#15378#0" />
+            <element signature="e#15417#15906#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2232">
+          <caret line="104" column="27" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
+          <folding>
+            <element signature="e#15#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RWingForMaya.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RWingRendererIO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <folding>
+            <element signature="e#15#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,7 +1,7 @@
 import sys
 import os
 path, filename = os.path.split(sys.argv[0])
-pythonInstallerPath = os.path.join(path, "installGui.py")
+pythonInstallerPath = os.path.join(path, "installMaya.py")
 lines = []
 with open(pythonInstallerPath, "r") as f:
     lines = f.readlines()
@@ -13,7 +13,7 @@ for line in lines:
     print(line)
 
 newText += "\");"
-melInstallerPath = os.path.join(path, "installCrossPlatformGUI.mel")
+melInstallerPath = os.path.join(path, "installMaya.mel")
 with open(melInstallerPath, "w") as f:
     f.write(newText)
 exit()

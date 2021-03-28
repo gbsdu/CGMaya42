@@ -39,7 +39,6 @@ import ctypes
 import RWingRendererIO
 
 import CGMaya_config
-import CGMaya_function
 import CGMaya_common
 import CGMaya_service
 import CGMaya_parser
@@ -58,6 +57,7 @@ class saveTaskWindow(QtCGMaya.QDialog):
         CGMaya_config.clipboard = QtCGMaya.QApplication.clipboard()
         self.setAcceptDrops(True)
         self.stereoFlag = False
+        self.dirList = []
         self.setup_ui()
 
     def setup_ui(self):
@@ -222,7 +222,7 @@ class saveTaskWindow(QtCGMaya.QDialog):
         dialog.setFileMode(QtCGMaya.QFileDialog.ExistingFiles)
         if dialog.exec_():
             # self.getSubmitsOfTask()
-            # textFont = QtCGMaya.QFont("song", 18, QtCGMaya.QFont.Normal)
+            # textFont = QtGui.QFont("song", 18, QtGui.QFont.Normal)
             self.fileList = dialog.selectedFiles()
             for submitFile in self.fileList:
                 item = QtGui.QListWidgetItem(submitFile)
@@ -353,11 +353,10 @@ class saveTaskWindow(QtCGMaya.QDialog):
         CGMaya_config.logger.server(CGMaya_config.currentProject['name'], CGMaya_config.currentTask['name'],
                                     CGMaya_config.currentTask['_id'], CGMaya_config.CGMaya_Action_Save)
 
-        QtGui.QMessageBox.information(self, u"提示", u"已保存完成.", QtGui.QMessageBox.Yes)
+        QtCGMaya.QMessageBox.information(self, u"提示", u"已保存完成.", QtCGMaya.QMessageBox.Yes)
 
         if flag:
             cmds.file(new=True, force=True)
-
 
         self.menu.setEnable(True)
         self.close()
@@ -421,6 +420,19 @@ class saveTaskWindow(QtCGMaya.QDialog):
         if os.path.isfile(filePath) and not filePath in zipFileList:
             zipFileList.append(filePath)
             zf.write(filePath, os.path.basename(filePath))
+            dir = os.path.dirname(filePath)
+            if dir in self.dirList:
+                return
+            self.dirList.append(dir)
+            for root, dirs, files in os.walk(dir):
+                for file in files:
+                    ext = file.split('.')[-1]
+                    if ext == 'rstexbin' or ext == 'zip':
+                        continue
+                    file1 = os.path.join(root, file)
+                    if not file1 in zipFileList:
+                        zipFileList.append(file1)
+                        zf.write(file1, os.path.basename(file1))
 
     def processSeqFiles(self, textureFile, zf, zipFileList):
         if textureFile.find('.<UDIM>.') < 0 and textureFile.find('.<udim>.') < 0 and \
@@ -448,11 +460,11 @@ class saveTaskWindow(QtCGMaya.QDialog):
     def processTexture(self, zf):
         textureFileList = cmds.ls(type='file')
         zipFileList = []
-        #dirList = []
+        self.dirList = []
         for textureFile in textureFileList:
-            print('textureFile =', textureFile)
+            # print('textureFile =', textureFile)
             textureFileName = cmds.getAttr(textureFile + '.fileTextureName')
-            print('textureFileName =', textureFileName)
+            # print('textureFileName =', textureFileName)
             self.processFile(textureFileName, zf, zipFileList)
 
             aText = textureFileName.split('.').pop()
@@ -511,7 +523,7 @@ class saveTaskWindow(QtCGMaya.QDialog):
         CGMaya_config.logger.info('Delete All Namespaces...\r')
         self.remove_allnamespace()
 
-        CGMaya_config.logger.info('Save File...\r')
+        CGMaya_config.logger.info('Save File...%s\r' % scene_fn )
         b = False
         try:
             cmds.file(rename=scene_fn)
@@ -637,7 +649,7 @@ class saveTaskWindow(QtCGMaya.QDialog):
                                                          QtCGMaya.QMessageBox.StandardButton.No | QtCGMaya.QMessageBox.StandardButton.Yes)
             reply = QtCGMaya.QMessageBox.Yes
             if not response == reply:
-                self.service.createNextShot(CGMaya_config.currentTask['project'], shotName, nextShotName)
+                self.service.createNextShot(CGMaya_config.currentTask['projectName'], shotName, nextShotName)
 
     def saveAniTask(self, scene_fn, note, type):
         CGMaya_config.logger.set("saveTask")
@@ -729,7 +741,7 @@ class saveTaskWindow(QtCGMaya.QDialog):
         self.service.setTaskLightFileIDList1(taskID, lightFileIDList, '')
         return True
 
-    def saveLightTaskRenderwing(service, scene_fn, frameListStr):
+    def saveLightTaskRenderwing(self, scene_fn, frameListStr):
         projectDir = CGMaya_config.storageDir + '/' + CGMaya_config.currentTask['projectName']
         renderWingDir = projectDir + '/' + CGMaya_config.currentTask['name'] + '/renderWing'
         if not os.path.exists(renderWingDir):
@@ -760,9 +772,9 @@ class saveTaskWindow(QtCGMaya.QDialog):
             rwFile = renderWingDir + '/' + rwFile
             zf.write(rwFile, arcName)
         zf.close()
-        renderwingFileID = service.putFile(CGMaya_config.currentTask, zipFileName)
+        renderwingFileID = self.service.putFile(CGMaya_config.currentTask, zipFileName)
 
-        renderLayers = getRenderLayers()
+        renderLayers = self.getRenderLayers()
         renderwingFileIDList = CGMaya_config.currentTask['renderwingFileIDList']
         for renderwingFile in renderwingFileIDList:
             if renderwingFile['name'] == os.path.basename(scene_fn):
@@ -772,7 +784,7 @@ class saveTaskWindow(QtCGMaya.QDialog):
         else:
             renderwingFileIDList.append(
                 {'name': os.path.basename(scene_fn), 'id': renderwingFileID, 'renderLayers': renderLayers})
-        service.myWFSetTaskRenderwingFileIDList(CGMaya_config.currentTask['_id'], renderwingFileIDList)
+        self.service.myWFSetTaskRenderwingFileIDList(CGMaya_config.currentTask['_id'], renderwingFileIDList)
         # CGMaya_config.logger.info('Uploading SingleFrame Output File...\r')
         # saveSingleOutput(service)
         CGMaya_config.logger.info(u"文件已保存")

@@ -31,6 +31,7 @@ import maya.cmds as cmds
 import pymel.core
 import shutil
 import time, timeit
+
 import CGMaya_config
 import CGMaya_parser
 import CGMaya_service
@@ -189,3 +190,20 @@ def exportAbc(dlg, abcPath):
     print 'melStr =', melStr
     mel.eval('AbcExport -j "-frameRange %d %d -dataFormat ogawa -root |%s -file %s/%s.abc";' % (startTime, endTime, selectGeo[0], abcPath, selectGeoName))
     return "%s/%s.abc" % (abcPath, selectGeoName)
+
+
+def exportFbx(service):
+    filename = cmds.file(q=True, sn=True)
+
+    # build the fbx filename
+    ext = filename.split('.').pop()
+    filename = filename.replace('.' + ext, '.fbx')
+
+    # select the root bone in the scene
+    cmds.select("Root")
+
+    # select all joints in the hierarchy
+    jointHierarchy = cmds.select(cmds.ls(dag=1, sl=1, type='joint'))
+
+    # Export the given fbx filename
+    mel.eval(('FBXExport -f \"{}\" -s').format(filename))

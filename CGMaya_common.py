@@ -50,6 +50,7 @@ def readConfigFile(ConfigFilePath):
     if os.path.exists(CGMaya_config.ConfigFileName):
         with open(CGMaya_config.ConfigFileName, 'r') as fp:
             config = json.load(fp)
+        CGMaya_config.myRootURL = config['myRootURL']
         CGMaya_config.IPFSUrl = config['IPFSUrl']
         CGMaya_config.teamName = config['teamName']
         CGMaya_config.userName = config['userName']
@@ -94,6 +95,49 @@ def writeConfigFile_user():
         json.dump(config, fp, indent=4)
 
 
+def isDesktopClientOpenFile():
+    ret = False
+    openFileList = cmds.file(query=True, list=True)
+    for openFile in openFileList:
+        ext = openFile.split('.').pop()
+        if ext == 'ma' or ext == 'mb' or ext == 'MA' or ext == 'MB':
+            name = os.path.basename(openFile).split('.')[0]
+            if readSwapConfigFile(name):
+                ret = True
+                break
+    return ret
+
+def readSwapConfigFile(taskName):
+    CGMaya_config.swapConfigFileName = os.path.join(CGMaya_config.sysStorageDir, CGMaya_config.swapConfigFileName)
+    if not os.path.exists(CGMaya_config.swapConfigFileName):
+        return False
+    with open(CGMaya_config.swapConfigFileName, 'r') as fp:
+        config = json.load(fp)
+    os.remove(CGMaya_config.swapConfigFileName)
+    CGMaya_config.swapConfigFileName = ''
+
+    if taskName != config['currentTaskName']:
+        return False
+    CGMaya_config.myRootURL = config['myRootURL']
+    CGMaya_config.IPFSUrl = config['IPFSUrl']
+    CGMaya_config.teamName = config['teamName']
+    CGMaya_config.userName = config['userName']
+    CGMaya_config.password = config['password']
+    CGMaya_config.assetStorageDir = config['assetStorageDir']
+    CGMaya_config.storageDir = config['storageDir']
+    CGMaya_config.currentTaskName = config['currentTaskName']
+    CGMaya_config.currentTaskID = config['currentTaskID']
+    CGMaya_config.currentProjectName = config['currentProjectName']
+    CGMaya_config.loadFlag = config['loadFlag']
+    CGMaya_config.textureReadFlag = config['textureReadFlag']
+    CGMaya_config.lightRefFlag = config['lightRefFlag']
+    CGMaya_config.currentProjectTemplate = config['currentProjectTemplate']
+    CGMaya_config.currentTaskStage = config['currentTaskStage']
+    CGMaya_config.taskFileID = config['taskFileID']
+    CGMaya_config.taskTextureFileID = config['taskTextureFileID']
+    CGMaya_config.render = config['render']
+    return True
+
 class fileLog:
     def __init__(self, filePath):
         self.filePath = filePath
@@ -133,76 +177,63 @@ def judgelogData(logJsonData, fileName, fileID):
             return 1
     return 0
 
-def convertTextureFile(textureDir):
-    if platform.system() == "Linux" or platform.system() == "Darwin":
-        return
-    userScriptDir = cmds.internalVar(userScriptDir=True)
-    exeFile = userScriptDir.replace('/', '\\') + 'CGMaya\\redshiftTextureProcessor.exe'
-    for fn in os.listdir(textureDir):
-        path = textureDir + fn
-        ext = path.split('.').pop()
-        if ext == 'rstexbin' or ext == 'rs':
-            continue
-        command = exeFile + ' ' + path
-        subprocess.Popen(command, shell=True)
-    # for refAssetID in CGMaya_config.currentTask['refAssetIDList']:
-    #     for fn in os.listdir(textureDir):
-    #         path = textureDir + fn
-    #         ext = path.split('.').pop()
-    #         if ext == 'rstexbin' or ext == 'rs':
-    #             continue
-    #         command = exeFile + ' ' + path
-    #         subprocess.Popen(command, shell=True)
-
 taskStageList = [u'布局', u'动画', u'灯光']
 
-def downloadFile(service, projectDir, refProjectDir, task, fileID, textureFileID='', dir=''):
-    if dir:
-        taskDir = dir
-    else:
-        taskDir = makeDir(projectDir, task['name'])
+
+# 下载maya模型文件及贴图文件
+#     projectDir:
+def downloadFile(service, projectDir, refProjectDir, dir, task, fileID, textureFileID=''):
     fn = service.getFileName(task, fileID)
-    filePath = os.path.join(taskDir, fn)
+    filePath = os.path.join(dir, fn)
     tmpDir = makeDir(projectDir, CGMaya_config.CGMaya_Tmp_Dir)
     downLoadFilePath = os.path.join(tmpDir, 'tmp.' + fn.split('.').pop())
     logPath = makeDir(projectDir, CGMaya_config.CGMaya_Log_Dir)
+
+    # 判断此模型是否被其他用户打开（占用）
     lockFilePath = os.path.join(logPath, task['name'] + CGMaya_config.lockFileExt)
-    print('lockFilePath =', lockFilePath)
     if os.path.exists(lockFilePath):
         str = u'文件正在被其他用户下载。。。，请等待--' + task['name']
+        CGMaya_config.logger.debug("lockFilePath----%s\r" % lockFilePath)
         QtCGMaya.QMessageBox.information(CGMaya_config.currentDlg, u"提示信息", str, QtCGMaya.QMessageBox.Yes)
         return False, str, ''
 
     with open(lockFilePath, 'w') as lockFP:
         lockFP.write('jjj')
+
     logFilePath = os.path.join(logPath, task['name'] + CGMaya_config.logFileExt)
     fLog = fileLog(logFilePath)
-    taskDir = makeDir(projectDir, task['name'])
     tmpDir = makeDir(projectDir, CGMaya_config.CGMaya_Tmp_Dir)
     fileName = os.path.basename(filePath)
     bExist = fLog.getData(fileName, fileID)
+
     if not os.path.exists(filePath) or bExist != 2:
+        # 如果模型文件存在并且后台模型文件已经更新过
         CGMaya_config.logger.info("Downloading File begin----%s\r" % filePath)
         begin = time.time()
         service.getFile(task, downLoadFilePath, fileID, fileName)
-        #CGMaya_config.textureReadFlag = False
         if textureFileID and CGMaya_config.textureReadFlag and not task['stage'] in taskStageList:
-            textureDir = makeDir(taskDir, CGMaya_config.CGMaya_Texture_Dir)
+            # 如果贴图文件存在，并且选中贴图开关，并且是资产模型
+            textureDir = makeDir(dir, CGMaya_config.CGMaya_Texture_Dir)
             textureFileName = service.getFileInfo(textureFileID).filename
             texturePath = os.path.join(tmpDir, textureFileName)
-            CGMaya_config.logger.info("Downloading texture File-----%s\r" % texturePath)
+            CGMaya_config.logger.info("Downloading texture File-----%s %s\r" % (texturePath, textureDir))
             service.getFile(task, texturePath, textureFileID, textureFileName)
             zf = zipfile.ZipFile(texturePath, 'r', zipfile.ZIP_DEFLATED, allowZip64=True)
             fileList = zf.namelist()
+
+            # zf.extractall(textureDir)
             for names in fileList:
                 try:
                     zf.extract(names, path=textureDir)
                 except Exception as e:
                     print 'File Read is failed----', names
             zf.close()
-            project = service.getProjectInfo(task['projectName'])
-            if project['render'] == 'redshift':
-                convertTextureFile(textureDir)
+
+            # project = service.getProjectInfo(task['projectName'])
+            # if project['render'] == 'redshift':
+            #     convertTextureFile(textureDir)
+
+            #  处理Redshift的代理文件
             for file1 in fileList:
                 if file1.split('.').pop() == 'rs':  # redshift Proxy
                     file = os.path.join(textureDir, file1)
@@ -215,21 +246,24 @@ def downloadFile(service, projectDir, refProjectDir, task, fileID, textureFileID
                         os.remove(bakFile)
                     else:
                         CGMaya_config.logger.info('Proxy File is not existed---%s\r' % file)
-            os.remove(texturePath)
+            if os.path.exists(texturePath):
+                os.remove(texturePath)
         if bExist == 0:
             fLog.setData(fileName, fileID)
         end = time.time()
         str = '{0:.2f}'.format(end - begin) + 's'
         CGMaya_config.logger.info("Downloading File end----%s\r" % str)
+        # print(downLoadFilePath, filePath)
+
+        # 修改模型文件引用路径
         processMaya(task['name'], downLoadFilePath, filePath, projectDir, refProjectDir)
-        os.remove(downLoadFilePath)
+        try:
+            os.remove(downLoadFilePath)
+        except WindowsError, e:
+            pass
+
     fLog.close()
-    # try:
-    #     textureAttachIDList = task['textureAttachIDList']
-    #     for textureAttachID in textureAttachIDList:
-    #
-    # except KeyError:
-    #     pass
+
     if os.path.exists(lockFilePath):
         os.remove(lockFilePath)
     return True, '', filePath
@@ -239,4 +273,17 @@ def processMaya(assetName, fileName_in, fileName_out, projectDir, refProjectDir)
     parser = CGMaya_parser.mayaParser(fileName_in)
     refList, textureList = parser.replaceFilePath(assetName, fileName_out, projectDir, refProjectDir)
     return refList, textureList
+
+def convertTextureFile(textureDir):
+    if platform.system() == "Linux" or platform.system() == "Darwin":
+        return
+    userScriptDir = cmds.internalVar(userScriptDir=True)
+    exeFile = userScriptDir.replace('/', '\\') + 'CGMaya\\redshiftTextureProcessor.exe'
+    for fn in os.listdir(textureDir):
+        path = textureDir + fn
+        ext = path.split('.').pop()
+        if ext == 'rstexbin' or ext == 'rs':
+            continue
+        command = exeFile + ' ' + path
+        subprocess.Popen(command, shell=True)
 
