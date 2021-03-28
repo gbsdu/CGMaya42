@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="cgyun-gb">
+    <serverData>
+      <paths name="aliyun-gb">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/CGTeam/CGMaya4" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="cgyun-gb">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/CGTeam/CGMaya4" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/capture_gui" />
+            <excludedPath local="true" path="$PROJECT_DIR$/Cython" />
+            <excludedPath local="true" path="$PROJECT_DIR$/ViewportCapture" />
+            <excludedPath local="true" path="$PROJECT_DIR$/win32" />
+            <excludedPath local="true" path="$PROJECT_DIR$/urllib3" />
+            <excludedPath local="true" path="$PROJECT_DIR$/Scripts" />
+            <excludedPath local="true" path="$PROJECT_DIR$/pymongo" />
+            <excludedPath local="true" path="$PROJECT_DIR$/requests" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build" />
+            <excludedPath local="true" path="$PROJECT_DIR$/MayaViewportCapture" />
+            <excludedPath local="true" path="$PROJECT_DIR$/chardet" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

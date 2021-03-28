@@ -1,0 +1,1 @@
+/Applications/Autodesk/maya2020/Maya.app/Contents/bin/mayapy setup.py build_ext --inplace

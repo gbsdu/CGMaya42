@@ -1,0 +1,27 @@
+global proc RCMaya_unInstall(){
+
+	string $instLog = "***  unInstallation Started  ***\r\n";
+	print $instLog;
+	string $dstScriptPath = toNativePath(`internalVar -userScriptDir`);
+	
+	string $pycFileList[];
+	string $RCMayaPath = $dstScriptPath+"\\RCMaya\\";
+	$pycFileList = `getFileList -folder $RCMayaPath -filespec "*.pyc"`;
+	for ($pycFile in $pycFileList) 
+		sysFile -delete  ($dstScriptPath+"\\RCMaya\\" + $pycFile);
+	sysFile -removeEmptyDir ($dstScriptPath+"\\RCMaya");
+	sysFile -delete  ($dstScriptPath+"\\aa.png");
+	sysFile -delete  ($dstScriptPath+"\\RCMaya.mel");
+
+	int $bakNum = 1;
+	if(`filetest -e ($dstScriptPath+"\\userSetup.mel")`) {
+		while(`filetest -e ($dstScriptPath+"\\userSetup.mel"+$bakNum)`)
+			$bakNum++;
+		sysFile -delete  ($dstScriptPath+"\\userSetup.mel");
+		sysFile -rename ($dstScriptPath+"\\userSetup.mel") ($dstScriptPath+"\\userSetup.mel"+($bakNum-1));	
+	}
+
+	string $instLog = "***  unInstallation Finished  ***\r\n";
+	print $instLog;
+}
+RCMaya_unInstall;

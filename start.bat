@@ -1,0 +1,1 @@
+"C:\Program Files\Autodesk\Maya2016\bin\mayapy.exe" setup.py build_ext --inplace

@@ -1,0 +1,32 @@
+global proc CGMaya_Setup(){
+	if (!`about -ntOS`)
+		error ("CGMaya_Setup is only available on the Windows operating system.");
+
+	string $instLog = "***  安装开始  ***\r\n";
+	//print $instLog;
+	$instLog += "Title: " + "CGMaya_Setup" + "\r\n";
+
+	// get source path
+	string $srcPath = `whatIs "CGMaya_Setup"`;
+	//print $srcPath;
+	int $size = size($srcPath) ;
+	$srcPath = `substring $srcPath 25 $size`;
+	$srcPath = dirname( $srcPath );
+	$srcPath = toNativePath( $srcPath );
+	//print $srcPath;
+
+	// get destination path
+	string $dstScriptPath = toNativePath(`internalVar -userScriptDir`);
+	//print $dstScriptPath;
+
+	$command = "mayapy " + $srcPath + "/RCSetup_maya.py " + $srcPath + " " + $dstScriptPath;
+	print $command;
+	//$output = system($command);
+    //$output = system("dir");
+
+	string $instLog = "***  安装结束  ***\r\n";
+	print $instLog;
+}
+RCMaya_Setup;
+
+

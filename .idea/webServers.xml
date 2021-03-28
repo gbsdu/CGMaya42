@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f7e9d526-a1ce-4ac5-97b2-643e2b67aca6" name="cgyun-gb" url="http://120.224.7.200">
+        <fileTransfer host="120.224.7.200" port="22" rootFolder="/home/gb" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="0f14727e-63d3-4f9e-97e9-0435a4069e19" name="aliyun-gb" url="http://39.99.200.173">
+        <fileTransfer host="39.99.200.173" port="22" rootFolder="/home/gb" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

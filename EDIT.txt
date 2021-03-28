@@ -1,0 +1,20 @@
+2020.3.1:
+     1。调整CGMaya_main.py的程序结构
+
+     2。梳理了CGMaya_config.tmpStorageDir、CGMaya_config.sysStorageDir
+
+     3。增加了logout的处理
+
+     4。完善logger，文件回滚RotatingFileHandler
+
+     5。完善config、config_user
+
+     6。task增加fileversionList,文件版本
+
+     7。openTask分为openAssetTask、openAniTask、openLightFileTask
+
+     8。saveTask分为saveAssetTask、saveAniTask、saveLightFileTask
+
+     9。对myTask对话框修改，QTabWidget
+
+

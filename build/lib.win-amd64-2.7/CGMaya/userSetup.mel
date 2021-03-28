@@ -1,0 +1,6 @@
+global proc CGMaya_mel()
+{
+	python "import CGMaya";
+	python "CGMaya.CGMaya_main.app()";
+}
+CGMaya_mel;

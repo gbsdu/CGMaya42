@@ -1,0 +1,1594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="07dfd4a7-65c6-48bc-9117-a82c5190b74b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/CGMaya4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya4.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_dialog.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_export.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_function.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_mouse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_open.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_reference.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_save.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_saveDlg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGMaya_submit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Build/BuildExecutable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Build/Cythonize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Build/Dependencies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Build/Distutils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Build/Inline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Build/IpythonMagic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Build/Tests/TestCyCache.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Build/Tests/TestInline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Build/Tests/TestIpythonMagic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Build/Tests/TestStripLiterals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Build/Tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Build/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Build/ipython-COPYING.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/CodeWriter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/AnalysedTreeTransforms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Annotate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/AutoDocTransforms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Buffer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Builtin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/CmdLine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Code.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Code.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/CodeGeneration.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/CythonScope.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/DebugFlags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/ExprNodes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/FlowControl.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/FlowControl.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/FlowControl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/FusedNode.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/FusedNode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Future.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Interpreter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Lexicon.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Lexicon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/MemoryView.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/ModuleNode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Naming.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Nodes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Optimize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/ParseTreeTransforms.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/ParseTreeTransforms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Parsing.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Parsing.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Parsing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Pipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/PyrexTypes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Pythran.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Scanning.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Scanning.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Scanning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/StringEncoding.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Symtab.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Tests/TestBuffer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Tests/TestCmdLine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Tests/TestFlowControl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Tests/TestGrammar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Tests/TestMemView.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Tests/TestParseTreeTransforms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Tests/TestSignatureMatching.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Tests/TestTreeFragment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Tests/TestTreePath.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Tests/TestTypes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Tests/TestUtilityLoad.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Tests/TestVisitor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/TreeFragment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/TreePath.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/TypeInference.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/TypeSlots.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/UtilNodes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/UtilityCode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Visitor.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Visitor.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/Visitor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Compiler/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Coverage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Debugger/Cygdb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Debugger/DebugWriter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Debugger/Tests/TestLibCython.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Debugger/Tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Debugger/Tests/cfuncs.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Debugger/Tests/cfuncs.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Debugger/Tests/codefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Debugger/Tests/test_libcython_in_gdb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Debugger/Tests/test_libpython_in_gdb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Debugger/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Debugger/libcython.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Debugger/libpython.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Debugging.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Distutils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Distutils/build_ext.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Distutils/extension.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Distutils/old_build_ext.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python2.5.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_bool.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_buffer.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_bytes.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_cobject.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_complex.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_dict.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_exc.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_float.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_function.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_getargs.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_instance.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_int.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_iterator.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_list.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_long.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_mapping.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_mem.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_method.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_module.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_number.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_object.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_oldbuffer.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_pycapsule.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_ref.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_sequence.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_set.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_string.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_tuple.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_type.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_unicode.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_version.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/python_weakref.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/stdio.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/stdlib.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/Deprecated/stl.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/__init__.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/array.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/bool.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/buffer.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/bytearray.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/bytes.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/ceval.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/cobject.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/complex.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/datetime.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/dict.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/exc.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/float.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/function.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/getargs.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/instance.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/int.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/iterator.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/list.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/long.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/longintrepr.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/mapping.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/mem.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/method.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/module.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/number.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/object.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/oldbuffer.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/pycapsule.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/pylifecycle.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/pystate.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/pythread.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/ref.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/sequence.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/set.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/slice.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/string.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/tuple.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/type.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/unicode.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/version.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/cpython/weakref.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libc/__init__.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libc/errno.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libc/float.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libc/limits.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libc/locale.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libc/math.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libc/setjmp.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libc/signal.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libc/stddef.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libc/stdint.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libc/stdio.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libc/stdlib.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libc/string.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libc/time.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/__init__.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/algorithm.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/cast.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/complex.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/deque.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/forward_list.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/functional.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/iterator.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/limits.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/list.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/map.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/memory.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/pair.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/queue.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/set.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/stack.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/string.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/typeindex.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/typeinfo.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/unordered_map.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/unordered_set.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/utility.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/libcpp/vector.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/numpy/__init__.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/numpy/math.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/openmp.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/posix/__init__.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/posix/dlfcn.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/posix/fcntl.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/posix/ioctl.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/posix/mman.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/posix/resource.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/posix/select.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/posix/signal.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/posix/stat.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/posix/stdio.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/posix/stdlib.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/posix/strings.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/posix/time.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/posix/types.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/posix/unistd.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Includes/posix/wait.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Parser/ConcreteSyntaxTree.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Parser/Grammar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Parser/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Plex/Actions.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Plex/Actions.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Plex/Actions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Plex/DFA.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Plex/Errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Plex/Lexicons.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Plex/Machines.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Plex/Regexps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Plex/Scanners.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Plex/Scanners.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Plex/Scanners.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Plex/Timing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Plex/Traditional.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Plex/Transitions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Plex/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Runtime/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Runtime/refnanny.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Runtime/refnanny.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Shadow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/StringIOTree.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/StringIOTree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Tempita/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Tempita/_looper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Tempita/_tempita.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Tempita/_tempita.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Tempita/compat3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/TestUtils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Tests/TestCodeWriter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Tests/TestCythonUtils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Tests/TestJediTyper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Tests/TestStringIOTree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Tests/xmlrunner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/AsyncGen.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/Buffer.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/Builtins.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/CConvert.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/CMath.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/Capsule.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/CommonStructures.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/Complex.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/Coroutine.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/CpdefEnums.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/CppConvert.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/CppSupport.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/CythonFunction.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/Embed.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/Exceptions.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/ExtensionTypes.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/FunctionArguments.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/ImportExport.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/MemoryView.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/MemoryView_C.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/ModuleSetupCode.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/ObjectHandling.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/Optimize.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/Overflow.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/Printing.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/Profile.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/StringTools.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/TestCyUtilityLoader.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/TestCythonScope.pyx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/TestUtilityLoader.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/TypeConversion.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utility/arrayarray.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/Utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cython/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDIT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ImgUtil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ArgImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/BdfFontFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/BmpImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/BufrStubImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ContainerIO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/CurImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/DcxImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/EpsImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ExifTags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/FitsStubImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/FliImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/FontFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/FpxImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/GbrImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/GdImageFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/GifImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/GimpGradientFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/GimpPaletteFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/GribStubImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/Hdf5StubImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/IcnsImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/IcoImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/Image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageChops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageCms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageColor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageDraw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageDraw2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageEnhance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageFileIO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageFilter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageFont.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageGL.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageGrab.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageMath.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageMode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageOps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImagePalette.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImagePath.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageQt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageSequence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageShow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageStat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageTk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageTransform.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImageWin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/ImtImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/IptcImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/JpegImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/McIdasImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/MicImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/MpegImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/MspImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/OleFileIO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PSDraw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PaletteFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PalmImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PcdImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PcfFontFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PcxImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PdfImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PixarImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PngImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PpmImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/PsdImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/SgiImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/SpiderImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/SunImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/TarIO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/TgaImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/TiffImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/TiffTags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/WalImageFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/WmfImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/XVThumbImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/XbmImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/XpmImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/_imaging.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/_imagingmath.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/pilconvert.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/pildriver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/pilfile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/pilfont.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/PIL/pilprint.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/Qt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ViewportCapture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ViewportCaptureCameraSetting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ViewportCaptureCameraSettingItem.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ViewportCaptureGeneral.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ViewportCaptureSetting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/icon/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/instruction/readme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/json/setting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ui/ViewportCapture.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ui/cam_setting.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ui/item.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayaViewportCapture/ui/setting.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQLdb/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQLdb/connections.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQLdb/constants/CLIENT.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQLdb/constants/CR.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQLdb/constants/ER.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQLdb/constants/FIELD_TYPE.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQLdb/constants/FLAG.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQLdb/constants/REFRESH.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQLdb/constants/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQLdb/converters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQLdb/cursors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQLdb/release.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQLdb/times.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RWingForMaya.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RWingRendererIO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scripts/mariMe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scripts/mariMeBridge.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/UI.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/config_mtoa.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/config_redshift.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/config_renderman_pxrdisney.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/config_renderman_pxrsurface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/config_stingray.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/config_vray.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/helper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/helper_arnold.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/helper_redshift.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/helper_renderman-old.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/helper_renderman.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/helper_stingray.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/helper_vray.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SubstancePainterToMaya/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/ImgUtil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ArgImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/BdfFontFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/BmpImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/BufrStubImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ContainerIO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/CurImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/DcxImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/EpsImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ExifTags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/FitsStubImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/FliImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/FontFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/FpxImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/GbrImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/GdImageFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/GifImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/GimpGradientFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/GimpPaletteFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/GribStubImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/Hdf5StubImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/IcnsImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/IcoImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/Image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageChops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageCms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageColor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageDraw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageDraw2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageEnhance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageFileIO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageFilter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageFont.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageGL.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageGrab.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageMath.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageMode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageOps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImagePalette.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImagePath.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageQt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageSequence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageShow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageStat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageTk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageTransform.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImageWin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/ImtImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/IptcImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/JpegImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/McIdasImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/MicImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/MpegImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/MspImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/OleFileIO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PSDraw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PaletteFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PalmImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PcdImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PcfFontFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PcxImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PdfImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PixarImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PngImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PpmImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/PsdImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/SgiImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/SpiderImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/SunImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/TarIO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/TgaImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/TiffImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/TiffTags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/WalImageFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/WmfImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/XVThumbImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/XbmImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/XpmImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/_imaging.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/_imagingmath.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/pilconvert.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/pildriver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/pilfile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/pilfont.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/PIL/pilprint.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/Qt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/ViewportCapture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/ViewportCaptureCameraSetting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/ViewportCaptureCameraSettingItem.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/ViewportCaptureGeneral.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/ViewportCaptureSetting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/icon/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/instruction/readme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/json/setting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/ui/ViewportCapture.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/ui/cam_setting.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/ui/item.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewportCapture/ui/setting.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_mysql.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_mysql_exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_portaudio.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/_cbson.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/binary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/codec_options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/dbref.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/decimal128.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/int64.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/json_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/max_key.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/min_key.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/objectid.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/py3compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/raw_bson.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/regex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/son.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/timestamp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bson/tz_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya.smm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/CGMaya_config.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/CGMaya_dialog.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/CGMaya_function.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/CGMaya_logger.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/CGMaya_main.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/CGMaya_parser.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/CGMaya_service.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/CGMaya_setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/CGMaya_submit.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/CGMaya_timer.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/RWingForMaya.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/RWingRendererIO.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/_portaudio.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/_cbson.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/binary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/codec_options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/dbref.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/decimal128.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/int64.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/json_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/max_key.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/min_key.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/objectid.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/py3compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/raw_bson.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/regex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/son.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/timestamp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/bson/tz_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/certifi/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/certifi/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/certifi/cacert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/certifi/core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/big5freq.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/big5prober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/chardistribution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/charsetgroupprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/charsetprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/cli/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/cli/chardetect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/codingstatemachine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/cp949prober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/enums.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/escprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/escsm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/eucjpprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/euckrfreq.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/euckrprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/euctwfreq.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/euctwprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/gb2312freq.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/gb2312prober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/hebrewprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/jisfreq.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/jpcntx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/langbulgarianmodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/langcyrillicmodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/langgreekmodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/langhebrewmodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/langhungarianmodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/langthaimodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/langturkishmodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/latin1prober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/mbcharsetprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/mbcsgroupprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/mbcssm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/sbcharsetprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/sbcsgroupprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/sjisprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/universaldetector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/utf8prober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/chardet/version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/gridfs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/gridfs/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/gridfs/grid_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/idna/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/idna/codec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/idna/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/idna/core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/idna/idnadata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/idna/intranges.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/idna/package_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/idna/uts46data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/ipfsapi/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/ipfsapi/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/ipfsapi/encoding.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/ipfsapi/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/ipfsapi/http.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/ipfsapi/multipart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/ipfsapi/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/ipfsapi/version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/_cmessage.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/bulk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/change_stream.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/client_options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/client_session.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/collation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/collection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/command_cursor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/compression_support.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/cursor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/cursor_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/driver_info.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/ismaster.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/max_staleness_selectors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/message.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/mongo_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/mongo_replica_set_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/monitor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/monitoring.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/monotonic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/network.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/operations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/periodic_executor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/pool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/read_concern.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/read_preferences.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/results.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/saslprep.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/server_description.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/server_selectors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/server_type.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/son_manipulator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/ssl_context.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/ssl_match_hostname.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/ssl_support.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/thread_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/topology.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/topology_description.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/uri_parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/pymongo/write_concern.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/requests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/requests/__version__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/requests/_internal_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/requests/adapters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/requests/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/requests/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/requests/certs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/requests/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/requests/cookies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/requests/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/requests/help.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/requests/hooks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/requests/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/requests/packages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/requests/sessions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/requests/status_codes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/requests/structures.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/requests/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/setup.mel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/unInstall.mel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/_collections.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/connectionpool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/contrib/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/contrib/_appengine_environ.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/contrib/_securetransport/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/contrib/_securetransport/bindings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/contrib/_securetransport/low_level.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/contrib/appengine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/contrib/ntlmpool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/contrib/pyopenssl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/contrib/securetransport.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/contrib/socks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/fields.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/filepost.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/packages/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/packages/backports/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/packages/backports/makefile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/packages/six.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/packages/ssl_match_hostname/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/packages/ssl_match_hostname/_implementation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/poolmanager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/request.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/util/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/util/connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/util/queue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/util/request.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/util/response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/util/retry.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/util/ssl_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/util/timeout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/util/url.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/urllib3/util/wait.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/CGMaya/userSetup.mel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib.win-amd64-2.7/dist.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_config.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_config.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_config.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_dialog.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_dialog.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_dialog.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_export.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_export.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_export.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_function.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_function.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_function.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_logger.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_logger.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_logger.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_main.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_main.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_main.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_mouse.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_mouse.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_mouse.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_parser.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_parser.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_parser.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_service.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_service.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_service.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_submit.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_submit.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_submit.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_timer.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_timer.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/CGMaya_timer.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/RWingForMaya.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/RWingForMaya.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/RWingForMaya.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/RWingRendererIO.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/RWingRendererIO.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/temp.win-amd64-2.7/Release/RWingRendererIO.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/accordion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/capture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/colorpicker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/lib.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/plugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/plugins/cameraplugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/plugins/codecplugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/plugins/defaultoptionsplugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/plugins/displayplugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/plugins/genericplugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/plugins/ioplugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/plugins/panzoomplugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/plugins/rendererplugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/plugins/resolutionplugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/plugins/timeplugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/plugins/viewportplugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/presets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/resources/config.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/resources/import.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/resources/reset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/resources/save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/tokens.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/vendor/Qt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/vendor/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capture_gui/version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/certifi/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/certifi/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/certifi/cacert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/certifi/core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cgteam.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/big5freq.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/big5prober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/chardistribution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/charsetgroupprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/charsetprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/cli/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/cli/chardetect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/codingstatemachine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/cp949prober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/enums.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/escprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/escsm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/eucjpprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/euckrfreq.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/euckrprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/euctwfreq.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/euctwprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/gb2312freq.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/gb2312prober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/hebrewprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/jisfreq.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/jpcntx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/langbulgarianmodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/langcyrillicmodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/langgreekmodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/langhebrewmodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/langhungarianmodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/langthaimodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/langturkishmodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/latin1prober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/mbcharsetprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/mbcsgroupprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/mbcssm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/sbcharsetprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/sbcsgroupprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/sjisprober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/universaldetector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/utf8prober.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chardet/version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cython.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/encode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gridfs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gridfs/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gridfs/grid_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/idna/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/idna/codec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/idna/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/idna/core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/idna/idnadata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/idna/intranges.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/idna/package_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/idna/uts46data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipfsapi/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipfsapi/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipfsapi/encoding.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipfsapi/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipfsapi/http.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipfsapi/multipart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipfsapi/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipfsapi/version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pyaudio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/_cmessage.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/bulk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/change_stream.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/client_options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/client_session.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/collation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/collection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/command_cursor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/compression_support.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/cursor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/cursor_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/driver_info.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/ismaster.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/max_staleness_selectors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/message.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/mongo_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/mongo_replica_set_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/monitor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/monitoring.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/monotonic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/network.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/operations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/periodic_executor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/pool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/read_concern.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/read_preferences.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/results.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/saslprep.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/server_description.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/server_selectors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/server_type.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/son_manipulator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/ssl_context.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/ssl_match_hostname.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/ssl_support.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/thread_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/topology.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/topology_description.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/uri_parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pymongo/write_concern.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pynvml.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requests/__version__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requests/_internal_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requests/adapters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requests/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requests/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requests/certs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requests/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requests/cookies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requests/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requests/help.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requests/hooks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requests/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requests/packages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requests/sessions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requests/status_codes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requests/structures.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requests/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup.mel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/six.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streaminghttp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testStorageSize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unInstall.mel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/_collections.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/connectionpool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/contrib/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/contrib/_appengine_environ.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/contrib/_securetransport/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/contrib/_securetransport/bindings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/contrib/_securetransport/low_level.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/contrib/appengine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/contrib/ntlmpool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/contrib/pyopenssl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/contrib/securetransport.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/contrib/socks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/fields.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/filepost.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/packages/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/packages/backports/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/packages/backports/makefile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/packages/six.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/packages/ssl_match_hostname/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/packages/ssl_match_hostname/_implementation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/poolmanager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/request.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/util/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/util/connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/util/queue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/util/request.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/util/response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/util/retry.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/util/ssl_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/util/timeout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/util/url.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/urllib3/util/wait.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/BackupRead_BackupWrite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/BackupSeek_streamheaders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/CopyFileEx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/CreateFileTransacted_MiniVersion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/EvtSubscribe_pull.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/EvtSubscribe_push.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/FileSecurityTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/GetSaveFileName.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/NetValidatePasswordPolicy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/OpenEncryptedFileRaw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/RegCreateKeyTransacted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/RegRestoreKey.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/SystemParametersInfo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/c_extension/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/cerapi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/dde/ddeclient.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/dde/ddeserver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/desktopmanager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/eventLogDemo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/getfilever.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/images/frowny.bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/images/smiley.bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/mmapfile_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/pipes/cat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/pipes/runproc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/print_desktop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/rastest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/GetTokenInformation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/account_rights.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/explicit_entries.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/get_policy_info.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/list_rights.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/localized_names.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/lsaregevent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/lsastore.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/query_information.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/regsave_sa.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/regsecurity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/sa_inherit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/security_enums.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/set_file_audit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/set_file_owner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/set_policy_info.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/setkernelobjectsecurity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/setnamedsecurityinfo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/setsecurityinfo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/setuserobjectsecurity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/sspi/fetch_url.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/sspi/simple_auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/sspi/socket_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/security/sspi/validate_password.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/service/nativePipeTestService.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/service/pipeTestService.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/service/pipeTestServiceClient.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/service/serviceEvents.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/timer_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/win32clipboardDemo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/win32clipboard_bitmapdemo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/win32comport_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/win32console_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/win32cred_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/win32fileDemo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/win32gui_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/win32gui_devicenotify.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/win32gui_dialog.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/win32gui_menu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/win32gui_taskbar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/win32netdemo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/win32rcparser_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/win32servicedemo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/win32ts_logoff_disconnected.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/win32wnet/testwnet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/win32wnet/winnetwk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/Demos/winprocess.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/_win32sysloader.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/_winxptheme.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/include/PyWinTypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/afxres.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/commctrl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/dbi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/mmsystem.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/netbios.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/ntsecuritycon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/pywin32_testutil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/pywintypes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/rasutil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/regcheck.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/regutil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/sspi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/sspicon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/win32con.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/win32cryptcon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/win32evtlogutil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/win32gui_struct.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/win32inetcon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/win32netcon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/win32pdhquery.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/win32pdhutil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/win32rcparser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/win32serviceutil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/win32timezone.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/win32traceutil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/win32verstamp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/winerror.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/winioctlcon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/winnt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/winperf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/lib/winxptheme.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/libs/pywintypes.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/mmapfile.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/odbc.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/perfmon.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/perfmondata.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/pythonservice.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/scripts/ControlService.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/scripts/VersionStamp/BrandProject.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/scripts/VersionStamp/bulkstamp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/scripts/VersionStamp/vssutil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/scripts/backupEventLog.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/scripts/ce/pysynch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/scripts/killProcName.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/scripts/rasutil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/scripts/regsetup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/scripts/setup_d.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/servicemanager.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/handles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_clipboard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_odbc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_pywintypes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_security.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_sspi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_win32api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_win32crypt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_win32event.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_win32file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_win32gui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_win32guistruct.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_win32inet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_win32net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_win32pipe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_win32rcparser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_win32timezone.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_win32trace.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/test_win32wnet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/testall.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/win32rcparser/python.bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/win32rcparser/python.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/win32rcparser/test.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/test/win32rcparser/test.rc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/timer.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win2kras.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32api.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32clipboard.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32console.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32cred.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32crypt.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32event.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32evtlog.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32file.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32gui.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32help.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32inet.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32job.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32lz.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32net.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32pdh.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32pipe.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32print.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32process.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32profile.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32ras.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32security.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32service.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32trace.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32transaction.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32ts.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/win32wnet.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/win32/winxpgui.pyd" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-740519460">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.opened" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="16" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="16" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="17" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CGMaya_export.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CGMaya_logger.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CGMaya_login.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CGMaya_mouse.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CGMaya_parser.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CGMaya_open.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="59" column="70" lean-forward="true" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CGMaya_submit.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="226" column="7" selection-start-line="226" selection-start-column="7" selection-end-line="226" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CGMaya_common.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1488">
+              <caret line="71" lean-forward="true" selection-start-line="47" selection-end-line="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CGMaya_save.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1632">
+              <caret line="69" column="60" lean-forward="true" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CGMaya_main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getRe</find>
+      <find>QMessageBox</find>
+      <find>pngDialog</find>
+      <find>wait</find>
+      <find>QFont</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/CGMaya_main.py" />
+        <option value="$PROJECT_DIR$/CGMaya_service.py" />
+        <option value="$PROJECT_DIR$/CGMaya_export.py" />
+        <option value="$PROJECT_DIR$/CGMaya_open.py" />
+        <option value="$PROJECT_DIR$/CGMaya_common.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="423" />
+    <option name="width" value="2778" />
+    <option name="height" value="2112" />
+  </component>
+  <component name="ProjectId" id="1YkEkIy4s4TMAMDisPmRP4pXlpr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CGMaya4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CGMaya4" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CGNukeRoto2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07dfd4a7-65c6-48bc-9117-a82c5190b74b" name="Default Changelist" comment="" />
+      <created>1583478333980</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583478333980</updated>
+      <workItem from="1583478344267" duration="323000" />
+      <workItem from="1583478680172" duration="2868000" />
+      <workItem from="1583482568371" duration="27663000" />
+      <workItem from="1583581440394" duration="9571000" />
+      <workItem from="1583618880694" duration="103000" />
+      <workItem from="1583625506956" duration="24576000" />
+      <workItem from="1583723132233" duration="44353000" />
+      <workItem from="1584001040899" duration="151000" />
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="282" y="0" width="1852" height="1408" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22742476" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Maya Log" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Python Console" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.2097044" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1062" y="459" key="FileChooserDialogImpl" timestamp="1584001069750">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1062" y="459" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1584001069750" />
+    <state x="784" y="346" key="SettingsEditor" timestamp="1583795260934">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="784" y="346" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1583795260934" />
+    <state x="1057" y="306" width="638" height="801" key="find.popup" timestamp="1583732514809">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1057" y="306" width="638" height="801" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1583732514809" />
+    <state x="1039" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1583731213909">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1039" y="325" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1583731213909" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CGMaya_save.py</url>
+          <line>162</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CGMaya_reference.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="329" column="17" selection-start-line="329" selection-start-column="12" selection-end-line="329" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_dialog.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="21" column="29" selection-start-line="21" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_export.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_logger.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_login.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_mouse.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_parser.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1488">
+          <caret line="71" lean-forward="true" selection-start-line="47" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_save.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="69" column="60" lean-forward="true" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_open.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="59" column="70" lean-forward="true" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CGMaya_submit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="226" column="7" selection-start-line="226" selection-start-column="7" selection-end-line="226" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
